@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: 'Formular';
+    src: url('/fonts/Formular-Black.eot');
+    src: url('/fonts/Formular-Black.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Formular-Black.woff2') format('woff2'),
+        url('/fonts/Formular-Black.woff') format('woff'),
+        url('/fonts/Formular-Black.ttf') format('truetype'),
+        url('/fonts/Formular-Black.svg#Formular-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.eot');
+    src: url('/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('/fonts/Montserrat-Regular.woff') format('woff'),
+        url('/fonts/Montserrat-Regular.ttf') format('truetype'),
+        url('/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('/fonts/PTRootUI-Regular.eot');
+    src: url('/fonts/PTRootUI-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/PTRootUI-Regular.woff2') format('woff2'),
+        url('/fonts/PTRootUI-Regular.woff') format('woff'),
+        url('/fonts/PTRootUI-Regular.ttf') format('truetype'),
+        url('/fonts/PTRootUI-Regular.svg#PTRootUI-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('/fonts/Formular-Medium.eot');
+    src: url('/fonts/Formular-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Formular-Medium.woff2') format('woff2'),
+        url('/fonts/Formular-Medium.woff') format('woff'),
+        url('/fonts/Formular-Medium.ttf') format('truetype'),
+        url('/fonts/Formular-Medium.svg#Formular-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Bold.eot');
+    src: url('/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('/fonts/Montserrat-Bold.woff') format('woff'),
+        url('/fonts/Montserrat-Bold.ttf') format('truetype'),
+        url('/fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('/fonts/Formular-Bold.eot');
+    src: url('/fonts/Formular-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Formular-Bold.woff2') format('woff2'),
+        url('/fonts/Formular-Bold.woff') format('woff'),
+        url('/fonts/Formular-Bold.ttf') format('truetype'),
+        url('/fonts/Formular-Bold.svg#Formular-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('/fonts/Formular-Light.eot');
+    src: url('/fonts/Formular-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Formular-Light.woff2') format('woff2'),
+        url('/fonts/Formular-Light.woff') format('woff'),
+        url('/fonts/Formular-Light.ttf') format('truetype'),
+        url('/fonts/Formular-Light.svg#Formular-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('/fonts/Formular.eot');
+    src: url('/fonts/Formular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Formular.woff2') format('woff2'),
+        url('/fonts/Formular.woff') format('woff'),
+        url('/fonts/Formular.ttf') format('truetype'),
+        url('/fonts/Formular.svg#Formular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/fonts/Oswald-Bold.eot');
+    src: url('/fonts/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Oswald-Bold.woff2') format('woff2'),
+        url('/fonts/Oswald-Bold.woff') format('woff'),
+        url('/fonts/Oswald-Bold.ttf') format('truetype'),
+        url('/fonts/Oswald-Bold.svg#Oswald-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
