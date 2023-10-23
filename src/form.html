@@ -187,22 +187,67 @@
 				</div>
 			</nav>
 		</header>
-		<section class="area" id="area">
+		<section class="area news-page events" id="events">
 			<div class="container">
 				<div class="bread q">
 					<a href="main.html">
 						Главная
 					</a>
-					<a href="contacts.html">
-						Контакты
+					<a href="form.html">
+						Подписка на зеленую
+						электроэнергию
 					</a>
 				</div>
 				<div class="area__box q">
-					<div class="area__content">
+					<div class="area__content stat__box_2">
 						<h1>
-							Контакты
+							Подписка на зеленую <br>
+							электроэнергию
 						</h1>
-						<div id="map"></div>
+						<p class="stat__sub">
+							Заполните простую форму и наши специалисты свяжутся с Вами в рабочее время.
+						</p>
+						<form action="#" class="form__main">
+							<div class="form__flex q">
+								<div class="form__item">
+									<label>ФИО</label>
+									<input type="text" placeholder="Введите Ваше ФИО">
+								</div>
+								<div class="form__item">
+									<label>Телефон</label>
+									<input type="tel" placeholder="+7 (___) ___ - __ - __" class="tel">
+								</div>
+								<div class="form__item">
+									<label>E-mail</label>
+									<input type="email" placeholder="Введите Ваш e-mail">
+								</div>
+								<div class="form__item">
+									<label>Регион</label>
+									<input type="text" placeholder="Введите Ваш город">
+								</div>
+								<div class="form__item">
+									<label>Организация</label>
+									<input type="text" placeholder="Название организации, ответственное лицо">
+								</div>
+								<div class="form__item">
+									<label>Сообщение</label>
+									<textarea name="text"
+										placeholder="Напишите комментарий к заявке (не обязательно)"></textarea>
+								</div>
+							</div>
+							<div class="calc__item q">
+								<input class="form-check-input custom-checkbox" type="checkbox" name="formKitchen" id="form2"
+									value="я соглашаюсь">
+								<label class="form-check-label " for="form2">
+									<p>
+										Согласен с <a href="#" target="blank">пользовательским соглашением</a>
+									</p>
+								</label>
+							</div>
+							<button class="call__btn btn" data-submit>
+								Отправить заявку
+							</button>
+						</form>
 					</div>
 					<div class="area__info">
 						<h2>
@@ -232,29 +277,6 @@
 								</a>
 							</div>
 						</div>
-						<div class="call__item q">
-							<div class="call__block">
-								<img src="/img/a3.png" alt="">
-							</div>
-							<div class="call__content">
-								<p class="call__info">
-									г. Москва, Центр международной <br>
-									торговли, Краснопресненская наб., <br>
-									дом 12, офис 1503
-								</p>
-							</div>
-						</div>
-						<div class="call__socials q">
-							<a href="#" class="call__link" target="_blank">
-								<img src="/img/a4.png" alt="">
-							</a>
-							<a href="#" class="call__link" target="_blank">
-								<img src="/img/a5.png" alt="">
-							</a>
-							<a href="#" class="call__link" target="_blank">
-								<img src="/img/a6.png" alt="">
-							</a>
-						</div>
 						<a href="#" class="btn area__btn">
 							Оставить заявку
 						</a>
@@ -262,6 +284,7 @@
 							Запланировать встречу
 						</h2>
 					</div>
+
 				</div>
 			</div>
 		</section>

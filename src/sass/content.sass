@@ -3,8 +3,8 @@
    top: 0
    right: 20px
    cursor: pointer
-   width: 12px
-   height: 12px
+   width: 14px
+   height: 14px
    fill: white
    z-index: 20
    &:hover 
@@ -50,16 +50,37 @@ textarea:-moz-placeholder
    top: 49%
    left: 50%
    transform: translate(-50%, -50%) scale(0)
-   width: 1270px
-   height: max-content
+   width: 570px
+   height: auto
    transition: 0.5s all
-   text-align: center
    background: white
-   padding: 59px 44px 47px
-.popup, .popup2, .popup3, .popup4, .popup5,  .popup6, .popup7, .popup8, .popup9
-   width: 717px
-   height: auto 
-   padding: 60px 60px 70px
+   padding: 50px
+   &__title 
+      text-align: center
+      margin-bottom: 25px
+      font-size: 30px
+   &__text
+      text-align: center
+      font-size: 16px
+      margin-bottom: 60px
+   .call__form
+      margin-top: 0
+      top: 0
+      input, textarea
+         font-size: 15px
+         margin-bottom: 50px
+   .call__row
+      margin-top: -20px
+   .call__form .custom-checkbox + label
+      font-size: 12px
+   .custom-checkbox + label::before
+      width: 22px
+      height: 22px
+      max-width: 22px
+   .call__btn
+      width: 181px
+      height: 50px
+      font-size: 15px
 .popup.active, .popup2.active, .popup3.active, .popup4.active,  .popup5.active, .popup6.active, .popup7.active, .popup8.active, .popup9.active
    transform: translate(-50%, -46%) scale(1)
    transition: 0.5s all
@@ -141,6 +162,40 @@ textarea:-moz-placeholder
    display: none
 .tabs__pane_show 
    display: block
+.youtube-link .svg, .youtube-link path 
+   transition: 0.5s
+.grtvideo-popup
+   position: fixed
+   top: 0px
+   left: 0
+   right: 0
+   bottom: 0
+   background: rgba(0, 0, 0, 0.85)
+   z-index: 99999
+   padding-top: 100px
+.grtvideo-popup-content
+   margin-top: 50px
+   width: 95%
+   max-width: 850px
+   margin-left: auto
+   margin-right: auto
+   -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4)
+   -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4)
+   box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4)
+   position: relative
+.grtvideo-popup-close 
+   position: absolute
+   top: -35px
+   right: 0
+   color: #FFF
+   font-size: 25px
+   cursor: pointer
+   transition: 0.5s
+   &:hover 
+      transform: rotate(90deg)
+.grtyoutube-iframe 
+   width: 100%
+   height: 480px
 .tabs__btn_active
    position: relative
    text-shadow: 1px 0px black
@@ -444,7 +499,7 @@ textarea:-moz-placeholder
       border: none
       right: 7px
       transition: 0.5s
-      bottom: 10px
+      bottom: 8px
       &:hover 
          path 
             fill: $green
@@ -452,8 +507,8 @@ textarea:-moz-placeholder
    background: transparent
    border: none
    cursor: pointer
-   margin-left: 36px
-   z-index: 22
+   margin-left: 43px
+   z-index: 10
    &:hover 
       .svg 
          path 
@@ -462,22 +517,24 @@ textarea:-moz-placeholder
    display: flex
    align-items: center
    justify-content: flex-start
-   margin-bottom: 29px
+   margin-bottom: 16px
    flex-wrap: wrap
    a 
-      color: #b3b3b3
-      font-family: 'Euclid Circular A'
-      font-size: 12px
+      color: #a6a6a6
+      font-family: 'PT Root UI'
+      font-size: 13px
       line-height: 26px
       &:after 
-         content: "/"
+         content: ">"
          display: inline-block
          margin: 0 10px
-         color: #5d5d5d !important
+         color: #545454 !important
       &:last-child:after 
          display: none
       &:hover 
          color: $green
+      &:last-child
+         color: #545454
 .mob 
    display: none
 #fromSlider 
@@ -1208,7 +1265,7 @@ textarea:-moz-placeholder
       position: absolute
       top: 21px
       left: 22%
-      z-index: 2
+      z-index: 3
    &__wrap 
       padding: 52px 311px 74px 0
       background-color: #1a1a1a
@@ -1311,6 +1368,9 @@ textarea:-moz-placeholder
       justify-content: space-between
    &__logo 
       width: 177px
+      display: flex
+      flex: 1 0 auto 
+      max-width: 177px
       height: 75px
       img 
          width: 100%
@@ -1353,7 +1413,7 @@ textarea:-moz-placeholder
          color: $green
    .selectCF .titleCF
       font-size: 16px
-      color: #282828
+      color: #282828 !important
    .selectCF .searchCF input
       display: none !important
    .selectCF .arrowCF
@@ -1368,3 +1428,1117 @@ textarea:-moz-placeholder
             margin-bottom: 0
          &:hover 
             color: $green
+.page 
+   h1 
+      font-size: 50px
+      font-weight: 900
+      line-height: 1.2
+      margin-bottom: 56px
+      text-transform: uppercase
+      color: #282828
+   .nav 
+      border-bottom: 1px solid #efefef
+      background: white
+   .lang_select 
+      position: relative 
+      &.active 
+         &:after 
+            content: ""
+            display: block
+            position: absolute
+            bottom: -45px
+            left: 0
+            width: 100%
+            height: 1px
+            background-color: #282828
+.area 
+   padding: 26px 0 131px
+   &__box 
+      justify-content: space-between
+      align-items: flex-start
+      margin-top: 60px
+   &__info 
+      display: flex
+      flex-direction: column 
+      width: 100%
+      max-width: 401px 
+      border-radius: 20px
+      position: relative
+      z-index: 2
+      flex: 1 0 auto 
+      border: 1px solid #ededed
+      padding: 36px 29px
+      background: white
+      h2 
+         font-size: 25px
+   &__sub 
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.71
+      color: #8e8e8e
+      margin-top: 8px
+      padding-bottom: 25px
+      margin-bottom: 28px
+      border-bottom: 1px solid #ededed
+   .call__block
+      width: 14px
+      margin-right: 13px
+      position: relative
+      top: 3px
+      &_2 
+         top: 5px
+   .call__tel
+      font-size: 16px
+      font-weight: 300
+      color: #000
+      &:hover 
+         color: $green
+   .call__item
+      margin-bottom: 27px
+   .call__info
+      font-size: 16px
+      font-weight: 300
+      font-family: 'Formular'
+      color: #000
+      line-height: 1.63
+   .call__socials 
+      margin-top: 9px
+      margin-left: 29px
+      a 
+         background: $green 
+         border: 1px solid $green 
+         &:hover 
+            background: transparent
+   &__btn 
+      width: 100%
+      font-size: 15px
+      margin: 37px auto 52px
+   &__content 
+      width: 100%
+      max-width: 64.5%
+      // margin-top: 41px
+      #map 
+         width: 100%
+         height: 827px
+         border-radius: 0px 100px 0 62px
+         overflow: hidden
+.menu-btn2.active
+   z-index: 60
+.news-page
+   .call__block_2 
+      top: 5px !important
+   .call__item
+      margin-bottom: 25px
+   .area__btn
+      margin-top: 10px
+      margin-bottom: 40px
+   &__content 
+      width: 100%
+      max-width: 401px 
+   .area__content
+      margin-top: 0
+   .area__box
+      margin-top: 60px
+   &__wrap 
+      display: flex
+      flex-direction: column 
+      width: 100%
+      max-width: 100%
+      border-radius: 20px
+      position: relative
+      z-index: 2
+      flex: 1 0 auto 
+      border: 1px solid #ededed
+      padding: 36px 36px 50px
+      background: white
+      margin-top: 49px
+      h2 
+         font-size: 25px
+   &__img 
+      width: 329px
+      height: 251px
+      border-radius: 10px
+      margin-right: 50px
+      flex: 1 0 auto 
+      max-width: 329px
+      overflow: hidden
+      object-fit: cover
+   &__el 
+      width: 100%
+      align-items: center
+      padding-bottom: 50px
+      border-bottom: 1px solid #eee
+      margin-bottom: 50px
+      &:hover 
+         .news-page__name
+            color: $green
+   &__time 
+      font-size: 14px
+      font-weight: 300
+      color: #8b8b8b
+      margin-bottom: 26px
+      span 
+         margin: 0 5px
+   &__name 
+      transition: 0.5s 
+      margin-bottom: 21px
+      font-size: 22px
+      font-weight: 300;
+      line-height: 1.45
+      color: #000
+   &__text 
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.71
+      color: #000
+   &__nav 
+      align-items: center
+      margin-top: 60px
+      li 
+         width: 43px
+         height: 43px
+         display: flex
+         align-items: center
+         border-radius: 50%
+         justify-content: center
+         margin-right: 18px
+         a 
+            font-size: 15px
+            font-weight: 300
+            color: #000
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+         &.active 
+            background: $yel
+         &:last-child
+            margin-right: 0
+   &__area 
+      padding-top: 16px
+      margin-top: 20px
+      border-top: 1px solid #dfdfdf
+   &__item 
+      align-items: flex-start
+      padding-bottom: 20px
+      margin-bottom: 20px
+      border-bottom: 1px solid #dfdfdf
+      &:hover 
+         .news-page__one
+            color: $green
+   &__pic 
+      margin-right: 18px
+      width: 61px
+      height: 61px
+      object-fit: cover
+      border-radius: 50%
+   &__one 
+      margin-bottom: 15px
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.71
+      color: #000
+      transition: 0.5s
+   &__row 
+      align-items: center
+      p 
+         font-size: 13px
+         color: #3f3f3f
+         margin-left: 12px
+         span 
+            margin: 0 5px
+   &__btn 
+      width: 100%
+      height: 60px
+      background: transparent
+      font-family: 'PT Root UI'
+      margin-top: 20px
+      border-radius: 30px
+      font-size: 16px
+      border: 1px solid #282828
+.news-item 
+   &__pic 
+      width: 100%
+      height: 435px
+      object-fit: cover 
+      border-radius: 10px
+      margin-bottom: 50px
+   &__sub 
+      font-size: 20px
+      font-weight: 300
+      line-height: 1.75
+      letter-spacing: normal
+      color: #000
+      margin-bottom: 50px
+      width: 100% 
+      max-width: 760px
+   &__name 
+      font-size: 32px
+      font-weight: 900
+      color: #000
+      margin-bottom: 40px
+   &__text 
+      font-size: 16px
+      font-weight: 300;
+      line-height: 1.63
+      color: #000
+      margin-bottom: 25px
+      width: 100% 
+      max-width: 814px
+      &:last-child
+         margin-bottom: 0
+   &__box 
+      padding-bottom: 80px
+      margin-bottom: 50px
+      border-bottom: 1px solid #dfdfdf
+   &__title 
+      margin-bottom: 50px
+      font-size: 25px
+      font-weight: 300
+.mat 
+   &__box 
+      width: 100%
+      justify-content: space-between
+      flex-wrap: wrap 
+   &__item 
+      display: block
+      width: 100%
+      border-radius: 10px
+      background-color: #f2f2f2
+      height: 296px
+      text-align: center
+      width: 48%
+      display: flex
+      margin-bottom: 35px
+      flex-direction: column 
+      align-items: center
+      justify-content: center
+      p 
+         font-size: 23px
+         margin-top: 40px
+         color: #000
+      &:hover 
+         background: $green
+.events 
+   .news-page__nav
+      margin-top: 40px
+   &__row 
+      margin-bottom: 60px
+      .custom-checkbox + label::before
+         width: 28px
+         height: 28px
+         border-radius: 5px
+         background-color: #f1f1f1
+         max-width: 28px 
+         border: 1px solid #f1f1f1
+      .custom-checkbox + label
+         color: #000
+         font-size: 17px
+         font-weight: 300
+      .calc__item
+         margin-right: 35px
+         &:last-child
+            margin-right: 0
+      .custom-checkbox:checked + label::before 
+         background: url(/img/check2.png) no-repeat center center
+         background-color: $yel
+   &__wrap 
+      flex-wrap: wrap 
+      justify-content: space-between
+   &__item 
+      width: 47%
+      margin-bottom: 50px
+      &:hover 
+         .events__text 
+            color: $green
+   &__pic 
+      width: 100%
+      height: 268px
+      border-radius: 10px
+      overflow: hidden 
+      margin-bottom: 30px
+      object-fit: cover
+   &__time 
+      align-items: center
+      justify-content: center
+      width: 160px
+      height: 31px
+      border-radius: 10px
+      background-color: #caf059
+      color: #3f3f3f
+      font-size: 14px
+      margin-bottom: 24px
+      span 
+         margin: 0 10px
+   &__text 
+      transition: 0.5s 
+      font-size: 18px
+      font-weight: 300
+      line-height: 1.56
+      color: #000
+      width: 100%
+      max-width: 275px
+.event 
+   &__info 
+      font-size: 25px
+      font-weight: 300
+      line-height: 2
+      margin-bottom: 50px
+      width: 100%
+      max-width: 726px
+   &__pic 
+      width: 100%
+      height: 421px
+      border-radius: 10px
+      object-fit: cover
+      margin-bottom: 50px
+   &__title 
+      font-size: 21px
+      font-weight: 500
+      margin-bottom: 30px
+   &__list 
+      margin-bottom: 30px
+      li 
+         font-size: 16px
+         font-weight: 400
+         line-height: 1.69
+   &__text 
+      font-size: 16px
+      font-weight: 400
+      line-height: 1.69
+      width: 100%
+      max-width: 670px
+      a 
+         color: #000
+         &:hover 
+            color: $green
+.main 
+   position: relative
+   .nav .lang_select--selected
+      color: white
+   .nav .selectCF
+      border: 1px solid white
+   .nav .selectCF .titleCF
+      color: white !important
+   .nav .selectCF .arrowCF
+      background: url(/img/bottom2.png) no-repeat !important
+   &__pic 
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      z-index: -1
+      object-fit: cover
+   .header__box 
+      margin: 320px 0 122px
+      h1 
+         text-transform: uppercase
+         margin-bottom: 25px
+         span 
+            color: $green
+   .header__sub
+      font-size: 16px
+      color: white
+      font-family: 'PT Root UI'
+      margin-bottom: 30px
+      line-height: 161%
+   .header__btn 
+      text-transform: uppercase
+   .header__wrap
+      position: relative
+   &__go 
+      position: absolute
+      bottom: -155px
+      left: 50%   
+      margin-left: -29px
+.faq 
+   &__box
+      width: 100%
+      max-width: 63%
+      .accordeon__button 
+         font-size: 24px
+         font-weight: 300
+         line-height: 1.13
+         letter-spacing: normal
+         color: #000
+         &:after 
+            background: url(/img/plus.png) no-repeat !important
+            width: 20px
+            height: 20px
+            top: 5px
+      .accordeon__item 
+         margin-bottom: 60px
+         &:last-child
+            margin-bottom: 0
+      .accordeon
+         padding: 0
+         width: 100%
+         border-bottom: none
+      .panel__info
+         font-size: 17px
+         font-weight: 300
+         line-height: 1.59
+         letter-spacing: normal;
+         text-align: left
+         color: #545454
+         width: 100%
+      .panel__text
+         max-width: 800px
+      .accordeon__button.active:after
+         background: url(/img/minus.png) no-repeat !important
+         width: 20px
+         height: 20px
+         top: 0
+.stat 
+   &__sub 
+      width: 100%
+      max-width: 775px 
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.63
+      color: #2d2d2d
+      margin-bottom: 59px
+      margin-top: -20px
+   &__block 
+      width: 100%
+      height: auto
+      padding: 66px 30px 44px 32px
+      border-radius: 10px
+      border: 1px solid #dfdfdf
+      margin-bottom: 33px
+      &:last-child
+         margin-bottom: 0
+         .stat__name 
+            margin-bottom: 60px
+   &__box 
+      width: 100%
+      max-width: 64%
+   &__pic 
+      width: 100%
+   &__name 
+      font-size: 25px
+      font-weight: 300
+      margin-bottom: 12px
+.stat__box_2
+   .stat__sub
+      font-size: 17px
+      line-height: 1.76
+      max-width: 100%
+   .stat2__text 
+      font-weight: 300
+      font-size: 17px
+      line-height: 1.76
+      margin-top: 54px
+.form 
+   &__main 
+      width: 100%
+      .form-check-label
+         display: flex
+         color: #939393
+         font-size: 17px
+         font-weight: 300
+         a 
+            color: #2d2d2d
+            &:hover 
+               color: $green
+      input 
+         width: 100%
+         height: 61px
+         border-radius: 10px
+         padding-left: 28px
+         font-size: 17px
+         border: solid 1px #dfdfdf
+         &:focus 
+            border: solid 1px $green
+      label 
+         display: block
+         font-size: 17px
+         font-weight: 300
+         margin-bottom: 16px
+      textarea
+         padding: 22px 0 0 28px
+         font-size: 17px
+         width: 100%
+         border: solid 1px #dfdfdf
+         max-width: 100% 
+         border-radius: 10px
+         min-height: 169px
+         &:focus 
+            border: solid 1px $green
+      .custom-checkbox + label::before
+         width: 20px
+         height: 20px
+         max-width: 20px
+         margin-right: 14px
+         border-radius: 3px
+         border: solid 1px #dfdfdf
+         background-size: 10px
+      .call__btn
+         width: 342px
+         font-size: 16px
+         margin-top: 30px
+         height: 60px
+         margin-left: 0
+      input::-webkit-input-placeholder 
+         color:  #939393 !important
+      input::-moz-placeholder
+         color:  #939393 !important
+      input:-ms-input-placeholder 
+         color:  #939393 !important
+      input:-moz-placeholder 
+         color:  #939393 !important
+      textarea::-webkit-input-placeholder 
+         color:  #939393 !important
+      textarea::-moz-placeholder
+         color:  #939393 !important
+      textarea:-ms-input-placeholder 
+         color:  #939393 !important
+      textarea:-moz-placeholder 
+         color:  #939393 !important
+   &__item 
+      margin-bottom: 49px
+      width: 100%
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+         width: 48%
+   &__flex 
+      justify-content: space-between
+      flex-wrap: wrap
+.buy 
+   &__item
+      width: 100%
+      overflow: hidden 
+      position: relative
+      border-radius: 20px
+      height: 311px
+      padding: 40px 50px
+      margin-bottom: 40px
+      flex-direction: column
+      &:last-child
+         margin-bottom: 0
+   &__pic
+      position: absolute
+      top: 0
+      left: 0  
+      width: 100%
+      height: 100%
+      z-index: 0
+      object-fit: cover
+   &__flex 
+      justify-content: space-between
+      align-items: center
+      margin-top: auto
+      position: relative
+      z-index: 2
+   &__name 
+      font-size: 20px
+      font-weight: 900
+      line-height: 1.5
+      text-transform: uppercase 
+      color: white
+   &__btn 
+      width: 205px
+      height: 60px
+      font-size: 16px  
+      font-family: 'PT Root UI'
+.about 
+   padding: 26px 0 131px
+   .call__block 
+      width: 14px
+      margin-right: 13px
+      position: relative
+      top: 3px
+   .area__info
+      .call__tel
+           color: #000
+   &__box 
+      width: 100%
+      .swiper46
+         overflow: hidden
+         margin-top: 58px
+         .swiper-slide 
+            border-radius: 5px
+            overflow: hidden
+            background-color: #ffffff
+            position: relative
+            align-items: center
+         .swiper-pagination44 
+            display: none
+            justify-content: center
+            margin: 65px auto 0
+   .swiper-button-disabled
+      opacity: 0
+   &__block 
+      width: 100% 
+      height: 474px
+      position: relative
+      border-radius: 20px
+      border: 1px solid  #d6d6d6
+      overflow: hidden
+      margin-bottom: 60px
+   &__video 
+      position: absolute
+      left: 50%
+      top: 50%
+      margin-top: -52px
+      margin-left: -52px
+      cursor: pointer
+      transition: 0.5s 
+      &:hover 
+         opacity: 0.6
+   &__pic 
+      width: 100%
+   &__content 
+      margin-bottom: 60px
+      width: 100%
+      p 
+         font-size: 17px
+         font-weight: 300
+         line-height: 1.59
+         margin-bottom: 25px
+         color: #545454
+         &:last-child
+            margin-bottom: 0
+   &__wrap 
+      text-align: center
+      width: 100%
+      height: auto
+      overflow: hidden
+      padding: 68px 40px 63px
+      border-radius: 10px
+      background-color: #f4f4f4
+      margin-bottom: 45px
+   &__title 
+      font-size: 37px
+      font-weight: 300
+      line-height: 0.73
+      color: #545454
+      margin-bottom: 30px
+   &__sub 
+      font-size: 25px
+      font-weight: 300
+      line-height: 1.08
+      color: #545454
+      margin-bottom: 90px
+   &__info 
+      font-size: 17px
+      font-weight: bold
+      line-height: 1.59
+      color: #545454
+   &__row 
+      margin-bottom: 85px
+      justify-content: space-between
+   &__item 
+      width: 47% 
+      img 
+         width: 100%
+         height: 255px
+         object-fit: cover 
+         overflow: hidden
+         border-radius: 10px
+         margin-bottom: 40px
+   &__name 
+      font-size: 25px
+      font-weight: 300
+      line-height: 1.08
+      color: #545454
+      margin-bottom: 30px
+   &__text 
+      font-size: 17px
+      font-weight: 300
+      line-height: 1.59
+      color: #545454
+   &__area  
+      padding: 84px 50px 116px 0
+      background-color: #f6f6f6
+      position: relative
+      .art__arrows
+         margin-left: 60px
+      &:before 
+         content: ""
+         display: block
+         height: 100%
+         width: 500%
+         position: absolute
+         left: -500%
+         top: 0
+         background-color: #f6f6f6
+         z-index: 0
+   &__bottom 
+      margin-top: 90px
+      #map 
+         width: 516px
+         height: 499px
+         overflow: hidden
+         border-radius: 0px 100px 0 62px
+         position: absolute
+         top: -34px
+         left: inherit
+         right: 0
+         z-index: 2
+      .call__fif
+         left: 31%
+      h2 
+         font-size: 50px
+.why 
+   position: relative
+   .stat__box
+      max-width: 65%
+   h1 
+      span 
+         color: $green
+   &__bottom 
+      margin-bottom: 100px
+      width: 100%
+      justify-content: space-between
+      h2 
+         font-size: 40px
+         margin-bottom: 30px
+   &__item 
+      flex-direction: column 
+      align-items: center
+      justify-content: center
+      text-align: center
+   &__right 
+      flex-direction: column 
+      align-items: center
+      justify-content: center
+      text-align: center
+      height: 100%
+      width: 209px
+      flex: 1 0 auto 
+      max-width: 209px
+      padding: 58px 37px 76px 36px
+      background-color: #fd0
+      p 
+         margin-top: 22px
+         font-size: 18.5px
+         line-height: 1.51
+         font-family: 'PT Root UI'
+         color: #1a1a1a
+   &__bot 
+      justify-content: space-between
+      .why__item 
+         height: 132px
+         &:nth-child(2), &:nth-child(1)
+            width: 164px
+            flex: 1 0 auto 
+            max-width: 149.5px
+            p 
+               font-size: 14px
+               line-height: 1.64
+         &:nth-child(2) 
+            background: white
+            p 
+               color: #2c2c2c
+         &:nth-child(1) 
+            background: #131313
+            p 
+               color: #fbfbfb
+         &:nth-child(3)
+            width: 100%
+            background: #caf059
+            p 
+               font-size: 18.5px
+               font-weight: bold
+               font-family: 'PT Root UI'
+               line-height: 1.51
+               text-transform: uppercase
+               color: #fbfbfb
+   &__left 
+      width: 100%
+      height: 100%
+      justify-content: space-between
+      .why__top
+         justify-content: space-between
+         .why__item 
+            height: 132px
+            &:nth-child(2), &:nth-child(3)
+               width: 164px
+               flex: 1 0 auto 
+               max-width: 158.5px
+               p 
+                  font-size: 14px
+                  line-height: 1.64
+            &:nth-child(2) 
+               background: #131313
+               p 
+                  color: #fbfbfb
+            &:nth-child(3) 
+               background: white
+               p 
+                  color: #2c2c2c
+            &:nth-child(1)
+               width: 100%
+               background: #caf059
+               p 
+                  font-size: 18.5px
+                  font-weight: bold
+                  font-family: 'PT Root UI'
+                  line-height: 1.51
+                  text-transform: uppercase
+                  color: #fbfbfb
+   &__list 
+      margin: -20px 0 90px
+      li 
+         align-items: center
+         margin-bottom: 34px
+         p 
+            font-size: 17px
+            margin-left: 12px
+            font-family: 'PT Root UI'
+            color: #3c3c3c
+         &:last-child
+            margin-bottom: 0
+   &__area 
+      width: 100%
+      height: auto
+      padding: 73px 50px 78px 55px
+      border-radius: 20px
+      background: white
+      margin-bottom: 190px
+      img 
+         width: 100%
+   &__sub 
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.56
+   &__wrap 
+      margin-top: 60px
+      width: 100%
+      height: 264px
+      justify-content: space-between
+   .wave 
+      position: absolute
+      top: 10px
+      left: 0
+      z-index: 0
+      width: 100%
+   .about__box
+      position: relative
+      z-index: 2
+.doc
+   &__row 
+      align-items: flex-start
+      justify-content: space-between
+      width: 100%
+      padding-bottom: 19px
+      margin-bottom: 25px
+      border-bottom: 1px solid #edeeee
+   &__box 
+      width: 100%
+   &__left 
+      align-items: flex-start
+      img 
+         position: relative
+         top: 3px
+   &__content 
+      margin-left: 16px
+   &__name 
+      font-family: 'PT Root UI'
+      font-size: 16px
+      line-height: 1.75
+      color: #3c3c3c
+      margin-bottom: 2px
+   &__size 
+      font-size: 14px
+      color: #b2b2b2
+      font-family: 'PT Root UI'
+   &__link 
+      font-size: 16px
+      line-height: 1.75
+      letter-spacing: normal
+      text-align: left
+      color: #9eb067
+      position: relative
+      top: 5px
+.header-it
+   .main__go
+      bottom: -42px
+   .header__wrap
+      text-align: center
+      padding: 304px 0 155px
+      position: relative
+      h1 
+         font-size: 90px
+         font-weight: 200
+         line-height: 1.11
+         color: white
+         span 
+            padding: 10px 5px 
+            background: $green
+            line-height: 100%
+            display: block
+            width: max-content
+            margin: 0 auto
+.header
+   &__area
+      padding: 102px 0 84px 
+      background: $green
+   &__row 
+      justify-content: space-between
+      align-items: center
+   &__one 
+      width: 100%
+      max-width: 476px
+      font-size: 17px
+      font-family: 'PT Root UI'
+      line-height: 1.59
+      color: #3c3c3c
+      span 
+         font-weight: bold
+   &__num 
+      font-size: 90px
+      font-weight: 900
+      line-height: 0.67
+      color: #282828
+      margin-right: 26px
+      font-family: 'Oswald'
+      span 
+         font-size: 50px
+   &__right 
+      align-items: center
+      img 
+         margin-left: 80px
+   &__two 
+      font-size: 17px
+      font-weight: 500
+      font-family: 'PT Root UI'
+      line-height: 1.59
+      color: #3c3c3c
+.it 
+   background-color: #f9f9f9
+   .news-page__btn
+      margin-top: 30px
+   &__list
+      flex-wrap: wrap
+      margin: 20px 0
+      li 
+         width: 46%
+         align-items: flex-start
+         margin-bottom: 60px
+         p 
+            font-family: 'PT Root UI'
+            margin-left: 15px
+            font-size: 17px
+            line-height: 1.59
+            color: #3c3c3c
+   &__area 
+      h2 
+         color: #282828
+         font-family: 'Oswald'
+         text-transform: uppercase
+         font-size: 50px
+         font-weight: 900
+         line-height: 1.4
+         letter-spacing: normal
+         span 
+            color: $green
+   h1 
+      span 
+         color: $green
+   &__row 
+      align-items: center
+      margin-top: 60px
+      justify-content: space-between
+   &__item 
+      align-items: flex-start
+      margin-left: 49px
+      p 
+         font-size: 16px
+         font-family: 'PT Root UI'
+         line-height: 1.75
+         color: #3c3c3c
+         margin: 15px 15px 0 0
+      &_3 
+         p 
+            white-space: nowrap
+   &__wrap 
+      width: 105%
+      margin-top: 40px
+      border-radius: 20px
+      justify-content: space-between
+      padding: 45px 45px 50px 55px
+      border: 4px solid  #caf059
+   &__el 
+      p 
+         margin-top: 20px
+         font-size: 16px
+         font-family: 'PT Root UI'
+         line-height: 1.63
+         color: #3c3c3c
+.call2 
+   padding-top: 100px
+.it2 
+   &__sub 
+      font-size: 17px
+      font-family: 'PT Root UI'
+      line-height: 1.65
+      color: #3c3c3c
+      width: 100%
+      max-width: 725px
+   &__wrap 
+      position: relative
+      margin: 58px 0 120px
+      .about__video
+         width: 180px
+         height: 180px
+         left: inherit
+         margin-left: 0
+         right: 10%
+         top: 0
+         margin-top: 0
+         img 
+            width: 100%
+            height: 100%
+            object-fit: contain
+         p 
+            font-size: 14px
+            line-height: 1.36
+            font-family: 'PT Root UI'
+            color: #3c3c3c
+            position: relative
+            top: -40px
+            left: 145px
+            display: block
+            &::before
+               content: ""
+               position: absolute
+               top: -17px
+               left: -59px
+               display: block
+               width: 50px
+               height: 40px
+               background: url(/img/figg.png) no-repeat center center
+   &__pic 
+      width: 100%
+   &__content 
+      p
+         font-size: 17px
+         font-family: 'PT Root UI'
+         line-height: 1.65
+         color: #3c3c3c
+         margin-bottom: 25px
+         &:last-child
+            margin-bottom: 0
+   &__gra 
+      width: 100%
+      margin-top: 30px
+.area__box_it
+   .it2__title
+      margin-bottom: 35px
+.ser 
+   padding: 92px 0 30px
+   &__sub 
+      font-family: 'PT Root UI'
+      font-size: 17px
+      line-height: 1.65
+      color: #3c3c3c
+      width: 100%
+      max-width: 760px
+      margin-top: 30px  
+   img 
+      width: 100%
+      margin-top: 83px
+      max-width: 822px

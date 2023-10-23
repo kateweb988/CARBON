@@ -35,6 +35,8 @@
 @media screen and (max-width: 1399px)
    .call__bg 
       bottom: 0px
+   .doc__row
+      width: 95%
 @media screen and (max-width: 1299px)
    .call__bg
       width: 108%
@@ -42,13 +44,34 @@
       max-width: 468px
    .footer__bg
       width: 119%
+   .area__content
+      max-width: 61.5%
+   .nav__logo
+      max-width: 140px
+   .nav__list
+      margin-left: 30px
+   .about__bottom #map
+      width: 440px
+   .why__bot .why__item:nth-child(3) p, .why__left .why__top .why__item:nth-child(1) p
+      font-size: 16.5px
+   .why__area
+      margin-bottom: 100px
+   .why .wave
+      top: 194px
+   .header__two
+      br 
+        display: none
+   .header__right img
+      margin-left: 40px
+   .it__wrap
+      padding: 40px 20px 
 @media screen and (max-width: 1199px)
    .menu-btn 
       width: 48px
       height: 24px
       position: absolute
       right: 26px
-      top: 33px
+      top: 44px
       z-index: 11
       overflow: hidden
    .menu-btn span 
@@ -58,7 +81,7 @@
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
-      background-color: white
+      background-color: black
       transition: all 0.5s
       margin-left: 5px
    .menu-btn span:nth-of-type(2) 
@@ -78,11 +101,27 @@
       width: 100%
       height: 100%
       padding: 40px 
-      background-color: #212525
+      background-color: white
       transform: translateX(-100%)
       transition: transform 0.5s
       z-index: 10
       overflow: hidden
+      .selectCF
+         border: 1px solid #232323 !important
+      .selectCF .titleCF
+         color: #282828 !important
+      .selectCF .arrowCF
+         background: url(/img/bottom.png) no-repeat !important 
+      &__list 
+         li 
+            margin-bottom: 40px
+            a 
+               color: #000
+      .style1 
+         display: block
+         .selectCF
+            margin-left: 0
+            margin-bottom: 40px
    .menu.active
       transform: translateX(0)
    .menu-btn.active 
@@ -97,15 +136,24 @@
       width: 24px
       transform: translate(-50%, 0%) rotate(45deg)
       margin-left: 0
-      background-color: white
+      background-color: black
    .menu-btn.active span:nth-of-type(3) 
       width: 24px
       top: 50%
       transform: translate(-50%, 0%) rotate(-44deg)
       margin-left: 0
-      background-color: white
+      background-color: black
    .menu-btn, .menu
       display: block
+   .menu-btn2.active
+      z-index: 60
+   .nav__list, .style1
+      display: none
+   .menu-btn2
+      margin-left: 0
+      margin-top: 14px
+   .nav__box
+      padding-right: 80px
    .art__per 
       display: block
       width: 100%
@@ -156,7 +204,7 @@
       max-width: 100% 
       margin-top: 60px
       top: 0
-   .call #map
+   .call #map, .about #map
       left: inherit
       right: 0%
       top: 29px
@@ -187,6 +235,73 @@
       height: 80px
       top: 0px
       left: 25%
+   .area__box
+      flex-direction: column
+   .area__content
+      max-width: 100%
+      margin-bottom: 40px
+   .area__content #map
+      height: 500px
+   .area__info
+      max-width: 100%
+   .news-page__content
+      max-width: 100%
+   .news-page .area__content
+      margin-bottom: 70px
+   .news-page__nav
+      margin-top: 40px
+   .news-item__sub, .news-item__text
+      max-width: 100%
+   .events__item
+      width: 100%
+   .events__text
+      max-width: 100%
+   .main 
+      .menu-btn span
+         background: white
+      .menu 
+         .selectCF .arrowCF
+            background: url(/img/bottom.png) no-repeat !important
+         .selectCF .titleCF
+            color: #282828 !important
+   .main .header__box
+      margin: 230px 0 122px
+   .faq__box
+      max-width: 100%
+      margin-bottom: 80px
+   .faq__box .accordeon__item
+      margin-bottom: 40px
+   .stat__box
+      max-width: 100%
+      margin-bottom: 60px
+   .stat__sub
+      max-width: 100%
+   .why .about__box
+      max-width: 100%
+   .why .wave
+      display: none
+   .why__list
+      margin: -10px 0 40px
+   .why__bot .why__item:nth-child(2), .why__bot .why__item:nth-child(1) 
+      width: 100%
+      max-width: 201.5px
+   .doc__row
+      width: 100%
+   .header__row
+      text-align: center
+      flex-direction: column
+   .header__right
+      flex-direction: column
+   .header__num
+      margin: 25px auto
+      position: relative
+      left: 15px
+   .header__right img
+      margin: 20px auto 0
+   .it__wrap
+      width: 100%
+   .ser img
+      max-width: 100%
 @media ( max-width: 991px )
    input, textarea, select
       -webkit-appearance: none
@@ -231,6 +346,50 @@
    .footer__last
       margin-top: 30px 
       padding-top: 30px
+   .news-page__img
+      margin-right: 30px
+   .about__bottom #map
+      width: 380px
+   .why__wrap
+      margin-top: 40px
+      flex-direction: column
+      height: auto
+   .why__right
+      width: 100%
+      max-width: 100%
+   .why__bot .why__item:nth-child(2), .why__bot .why__item:nth-child(1)
+      max-width: 186.5px
+   .header-it .header__wrap 
+      padding: 204px 0 120px
+   .it__row
+      flex-direction: column
+   .it__item 
+      align-items: center
+      margin-left: 0
+      width: 250px
+      margin-bottom: 20px
+      p 
+         font-size: 14px
+         br 
+            display: none
+      img 
+         object-fit: contain 
+         width: 9px
+   .it__item_3 p
+      white-space: inherit
+   .it__wrap
+      flex-direction: column
+      align-items: center
+   .it__el
+      margin-bottom: 25px
+      width: 100%
+      p 
+         margin-top: 10px
+         max-width: 100% 
+         br 
+            display: none
+      &:last-child
+         margin-bottom: 0
 @media screen and (max-width: 767px)
    .art__link img
       margin-left: 15px
@@ -274,7 +433,7 @@
       font-size: 13px
       br 
          display: none
-   .call #map 
+   .call #map, .about #map
       left: inherit
       right: 0%
       top: 0
@@ -285,6 +444,26 @@
       border-radius: 20px
    .call__wrap
       width: 100%
+   .mat__item
+      width: 100%
+   .faq__box .accordeon__button
+      padding-right: 40px
+      font-size: 21px
+   .buy__flex
+      flex-direction: column
+      text-align: center
+      // margin-top: 0
+   .buy__name
+      margin-bottom: 20px
+   .doc__row
+      flex-direction: column
+   .doc__link
+      top: 0
+      margin: 10px auto 0
+   .doc__name 
+      font-size: 15px
+      line-height: 1.5
+      margin-bottom: 2px
 @media screen and (max-width: 576px)
    button:active, button:focus 
       outline: none
@@ -388,7 +567,7 @@
       margin: 30px auto 0
    .call__form
       margin-top: 40px
-   .call #map
+   .call #map, .about #map
       margin-top: 40px
    .footer__logo
       width: 140px
@@ -408,3 +587,319 @@
       padding-top: 80px
    .info__item:last-child
       margin-bottom: 0 !important
+   .page h1 
+      font-size: 32px
+      margin-bottom: 40px
+   .area__content
+      margin-top: 20px
+   .nav__logo 
+      width: 120px
+      max-width: 120px
+      height: auto
+   .menu-btn 
+      right: 14px
+      top: 33px
+   .menu-btn2
+      margin-top: 11px
+   .menu2
+      width: 360px
+      margin-left: -180px
+      padding: 25px
+   .menu-btn2.active
+      top: 0%
+      right: 12%
+   .area__content #map, .about #map
+      height: 350px
+   .area, .about
+      padding-bottom: 80px
+   .news-page__img
+      width: 100%
+      height: auto
+      max-width: 100%
+      margin-right: 0
+      margin-bottom: 25px
+      flex: inherit
+   .news-page__el
+      flex-direction: column
+   .news-page__time
+      margin-bottom: 15px
+   .news-page__name
+      margin-bottom: 10px  
+      font-size: 18px
+   .news-page__el
+      padding-bottom: 40px
+      margin-bottom: 40px
+   .news-page__wrap
+      padding: 30px 20px
+   .news-item__pic
+      margin-bottom: 30px
+      width: 100%
+      height: auto
+   .news-item__sub
+      margin-bottom: 30px
+      font-size: 18px
+   .news-item__name 
+      font-size: 26px
+      margin-bottom: 20px
+   .news-item__text
+      font-size: 15px
+      margin-bottom: 15px
+   .news-item__box
+      padding-bottom: 40px
+      margin-bottom: 40px
+   .news-item__title
+      margin-bottom: 30px
+   .news-item
+      .news-page__el
+         margin-bottom: 0
+   .bread a
+      font-size: 12px
+      line-height: 17px
+   .area__box
+      margin-top: 30px
+   .mat__item
+      height: 220px
+      &:last-child
+         margin-bottom: 0
+   .mat__item p 
+      font-size: 21px
+      margin-top: 25px
+   .events__row .custom-checkbox + label
+      font-size: 15px
+   .events__row
+      margin-bottom: 30px
+   .events__pic
+      height: auto
+      margin-bottom: 20px
+   .events__time
+      margin-bottom: 15px
+   .events .news-page__nav
+      margin-top: 0
+   .event__info 
+      font-size: 21px
+      line-height: 36px
+      margin-bottom: 30px
+      max-width: 100%
+   .event__pic
+      height: auto
+      margin-bottom: 30px
+   .event__title 
+      font-size: 20px
+      margin-bottom: 20px
+   .event__list
+      margin-bottom: 20px
+   .event__list li, .event__text
+      font-size: 15px
+   .main .header__box h1
+      font-size: 40px
+   .main .header__sub
+      br 
+         display: none
+   .main .header__box 
+      margin: 79px 0 106px
+   .info
+      margin-top: 60px
+   .main__go
+      width: 40px
+      margin-left: -20px
+      bottom: -137px
+      img
+         width: 100%
+         height: 100%
+   .main__pic
+      width: 159%
+      left: -146px
+   .faq__box .accordeon__button.active::after
+      top: -5px
+   .faq__box .panel__info
+      font-size: 16px
+   .faq__box .panel__text
+      margin-top: 20px
+   .stat__sub
+      font-size: 14px
+      margin-bottom: 40px
+   .stat__block
+      padding: 30px 10px 20px
+   .stat__name
+      font-size: 21px
+   .stat__box_2 .stat__sub
+      font-size: 16px
+   .stat__box_2 .stat2__text
+      font-size: 16px
+      margin-top: 30px
+   .stat__box_2 .stat__sub
+      margin-bottom: 30px
+   .form__item:nth-child(1), .form__item:nth-child(2), .form__item:nth-child(3), .form__item:nth-child(4)
+      width: 100%
+   .form__item
+      margin-bottom: 30px
+   .form__main
+      textarea
+         font-size: 16px
+         padding-left: 15px
+      input 
+         font-size: 16px
+         padding-left: 15px
+   .form__main .call__btn
+      width: 100%
+   .buy__btn
+      width: 100%
+   .buy__pic
+      opacity: 0.9
+   .buy__item
+      padding: 40px 20px
+   .about__block
+      height: 200px
+      margin-bottom: 30px
+   .about__video
+      width: 70px
+      height: 70px
+      margin-left: -35px
+      margin-top: -35px
+      img 
+         width: 100%
+         height: 100%
+   .about__content p
+      font-size: 16px
+      margin-bottom: 15px
+   .about__content
+      margin-bottom: 40px
+   .about__title 
+      font-size: 24px
+      font-weight: 300
+      line-height: 150%
+      margin-bottom: 20px
+   .about__wrap
+      padding: 30px 20px 
+      margin-bottom: 30px
+   .about__sub
+      font-size: 19px
+      margin-bottom: 40px
+   .about__info
+      font-size: 14px
+   .about__row
+      margin-bottom: 60px
+      flex-direction: column
+   .about__item
+      width: 100%
+      margin-bottom: 40px
+      &:last-child
+         margin-bottom: 0
+   .about__item img
+      margin-bottom: 25px
+   .about__name 
+      font-size: 22px
+      margin-bottom: 20px
+   .about__text
+      font-size: 16px
+   .about__area 
+      padding: 50px 20px 160px 0
+   .about__box .swiper46 .swiper-pagination44
+      display: flex
+      margin-top: 30px
+   .about__box .swiper46
+      margin-top: 30px
+   .about 
+      .art__link 
+         bottom: 66px
+         margin-left: -100px
+   .about__bottom
+      margin-top: 60px
+   .why__list li p
+      font-size: 15px
+   .why__list li
+      margin-bottom: 20px
+   .why__area
+      padding: 40px 20px
+      margin-bottom: 50px
+   .why__bottom h2
+      margin-bottom: 20px
+   .why__sub
+      font-size: 14px
+   .why__left .why__top, .why__bot
+      width: 100%
+      flex-wrap: wrap 
+   .why__left .why__top .why__item:nth-child(1), .why__bot .why__item:nth-child(3)
+      max-width: 100%
+      height: 110px
+   .why__left .why__top .why__item:nth-child(2), .why__left .why__top .why__item:nth-child(3), .why__bot .why__item:nth-child(2), .why__bot .why__item:nth-child(1)
+      max-width: 50%
+      width: 50%
+   .why__wrap
+      margin-top: 30px
+   .why__right
+      padding: 40px 20px
+   .why__bottom
+      margin-bottom: 70px
+   .header-it .header__wrap h1
+      font-size: 32px
+      margin-bottom: 0
+   .header-it .header__wrap
+      padding: 100px 0
+   .header-it
+      .main__pic
+         left: -100px
+   .header__area
+      padding: 60px 0
+   .header__num
+      font-size: 70px
+   .header__one
+      font-size: 15px
+   .header__two
+      font-size: 15px
+   .header-it .main__go
+      bottom: -30px
+   .it 
+      .area__box
+         margin-top: 40px
+   .it__list
+      flex-direction: column
+      li 
+         width: 100%
+         margin-bottom: 30px
+         img 
+            margin-top: 4px
+   .it__el
+      img 
+         width: 60px
+      p 
+         font-size: 14px
+   .it2__wrap .about__video
+      width: 100px
+      height: 100px
+      top: -40px
+   .area__box_it .it2__title
+      margin-bottom: 25px
+   .it2__sub
+      font-size: 16px
+   .it2__wrap .about__video p
+      top: -23px
+      left: 80px
+      font-size: 12px
+   .it2__wrap .about__video p::before 
+      top: -15px
+      left: -47px
+      background-size: 31px
+   .it2__wrap
+      margin-bottom: 60px
+   .it2__content p
+      font-size: 15px
+      margin-bottom: 15px
+   .ser
+      padding: 50px 0 0px
+   .ser__sub
+      font-size: 16px
+      margin-top: 20px
+   .ser img
+      margin-top: 40px
+   .popup__text
+      font-size: 14px
+      margin-bottom: 30px
+      br 
+         display: none
+   .popup .call__btn
+      width: 100%
+
+
+
+

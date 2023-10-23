@@ -37,45 +37,115 @@
 			<a href="contacts.html"
 				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Контакты</a>
 		</li>
-		<!-- <li style="width: 25%; margin: 0 auto;">
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="news.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Новости</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="news-item.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Новость</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="materials.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Материалы</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="events.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Мероприятия</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="event.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Мероприятие</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="faq.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">FAQ</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto;">
+			<a href="stat.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Аналитика</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto;">
+			<a href="stat2.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Косвенные</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto;">
+			<a href="form.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Подписка</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto;">
+			<a href="buy.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Купить</a>
+		</li>
+		<li style="width: 25%; margin: 0px auto;">
 			<a href="about.html"
-				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">О компании</a>
-		</li> -->
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">О нас</a>
+		</li>
+		<li style="width: 25%; margin: 0px auto;">
+			<a href="why.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Решения для
+				бизнеса</a>
+		</li>
+		<li style="width: 25%; margin: 0px auto;">
+			<a href="doc.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Прямые
+				договоры</a>
+		</li>
+		<li style="width: 25%; margin: 0px auto;">
+			<a href="item.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">
+				Углеродные
+				единицы
+			</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="item2.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">
+				Зелёные
+				сертификаты
+			</a>
+		</li>
 	</ul>
 	<div class="d-flex"
 		style="justify-content: center; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
 		<a href="#" class="btn a1 btn_1" style="margin: 20px;">
-			18 лет
+			popup
 		</a>
 	</div>
 	<div class="popup__bg" id="popup">
 		<div class="popup">
 			<img src="/img/close.png" alt="" class="close-popup">
 			<div class="popup__wrap">
-				<p class="popup__title">
-					Вам исполнилось 18 лет?
-				</p>
+				<h2 class="popup__title">
+					Обратный звонок
+				</h2>
 				<p class="popup__text">
-					Согласно статье 14. 16 КоАП РФ “Нарушение правил продажи этилового
-					спирта, алкогольной и спиртосодержащей продукции” запрещена
-					продажа спиртосодержащей продукции несовершеннолетним.
+					Оставьте данные и мы перезвоним Вам <br> в ближайшее время
 				</p>
-				<p class="popup__text">
-					Мы используем файлы cookie. Оставаясь на этом весайте, Вы выражаете
-					полное согласие на хранение и использование файлов cookie для
-					работоспособности и улучшения использования сайта.
-				</p>
-				<p class="popup__text">
-					Если Вам меньше 18 лет, пожалуйста, покиньте сайт
-				</p>
-				<div class="popup__links d-flex">
-					<a href="#" class="popup__btn1 btn">
-						Да, мне есть 18 лет
-					</a>
-					<a href="#" class="popup__btn2 btn">
-						Мне нет 18 лет
-					</a>
-				</div>
+				<form action="success.php" class="call__form js-form" id="popupResult" method="post">
+					<div class="call__flex q">
+						<input type="text" name="name" placeholder="Имя">
+						<input type="text" name="surname" placeholder="Фамилия">
+					</div>
+					<input type="text" name="name" placeholder="Название компании">
+					<input type="email" name="email" placeholder="Электронная почта">
+					<textarea name="text" placeholder="Чем мы можем Вам помочь?"></textarea>
+					<div class="call__row q">
+						<div class="calc__item">
+							<input class="form-check-input custom-checkbox" type="checkbox" name="formKitchen" id="form2"
+								value="я соглашаюсь">
+							<label class="form-check-label " for="form2">
+								<p>
+									Отправляя заявку я соглашаюсь <br>
+									с <a href="#" target="blank"> политикой конфиденциальности</a>
+								</p>
+							</label>
+						</div>
+						<button class="call__btn btn" data-submit>
+							Отправить
+						</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>

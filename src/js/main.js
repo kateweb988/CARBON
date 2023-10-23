@@ -52,6 +52,70 @@ document.addEventListener("DOMContentLoaded", () => {
   new ItcTabs('.tabs');
 });
 document.addEventListener("DOMContentLoaded", () => {
+  $(document).ready(function () {
+    $(".youtube-link").grtyoutube({
+      autoPlay: true
+    });
+  });
+
+  (function ($) {
+
+    $.fn.grtyoutube = function (options) {
+
+      return this.each(function () {
+
+        // Get video ID
+        var getvideoid = $(this).attr("youtubeid");
+
+        // Default options
+        var settings = $.extend({
+          videoID: getvideoid,
+          autoPlay: true
+        }, options);
+
+        // Convert some values
+        if (settings.autoPlay === true) { settings.autoPlay = 1 } else { settings.autoPlay = 0 }
+
+        // Initialize on click
+        if (getvideoid) {
+          $(this).on("click", function () {
+            $("body").append('<div class="grtvideo-popup">' +
+              '<div class="grtvideo-popup-content">' +
+              '<span class="grtvideo-popup-close">&times;</span>' +
+              '<iframe class="grtyoutube-iframe" src="https://www.youtube.com/embed/' + settings.videoID + '?rel=0&wmode=transparent&autoplay=' + settings.autoPlay + '&iv_load_policy=3" allowfullscreen frameborder="0"></iframe>' +
+              '</div>' +
+              '</div>');
+          });
+        }
+
+        // Close the box on click or escape
+        $(this).on('click', function (event) {
+          event.preventDefault();
+          $(".grtvideo-popup-close, .grtvideo-popup").click(function () {
+            $(".grtvideo-popup").remove();
+          });
+        });
+
+        $(document).keyup(function (event) {
+          if (event.keyCode == 27) {
+            $(".grtvideo-popup").remove();
+          }
+        });
+      });
+    };
+  }(jQuery));
+});
+document.addEventListener("DOMContentLoaded", () => {
+  // Scrollto
+  $('.go_to').click(function () { // ловим клик по ссылке с классом go_to
+    var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+    if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+      $('html, body').animate({ scrollTop: $(scroll_el).offset().top - 0 }, 800); // анимируем скроолинг к элементу scroll_el
+    }
+    return false; // выключаем стандартное действие
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
   class ItcTabs {
     constructor(target, config) {
       const defaultConfig = {};
@@ -1390,6 +1454,37 @@ document.addEventListener('DOMContentLoaded', function () {
       1200: {
         spaceBetween: 60,
         slidesPerView: 3
+      }
+    }
+  });
+  const swiper46 = new Swiper('.swiper46', {
+    slidesPerView: 2,
+    spaceBetween: 48,
+    pagination: {
+      el: ".swiper-pagination44",
+    },
+    navigation: {
+      nextEl: '.swiper-button-next44',
+      prevEl: '.swiper-button-prev44',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        spaceBetween: 0,
+        loop: true,
+        slidesPerView: 1
+      },
+      767: {
+        spaceBetween: 10,
+        slidesPerView: 2
+      },
+      992: {
+        spaceBetween: 20,
+        slidesPerView: 2
+      },
+      1200: {
+        spaceBetween: 48,
+        slidesPerView: 2
       }
     }
   });

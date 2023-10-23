@@ -19,7 +19,6 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="">
 	<meta property="og:description" content="">
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
@@ -187,22 +186,47 @@
 				</div>
 			</nav>
 		</header>
-		<section class="area" id="area">
+		<section class="area news-page mat" id="mat">
 			<div class="container">
 				<div class="bread q">
 					<a href="main.html">
 						Главная
 					</a>
-					<a href="contacts.html">
-						Контакты
+					<a href="materials.html">
+						Полезные материалы
 					</a>
 				</div>
 				<div class="area__box q">
 					<div class="area__content">
 						<h1>
-							Контакты
+							Полезные материалы
 						</h1>
-						<div id="map"></div>
+						<div class="mat__box q">
+							<a href="#" class="mat__item">
+								<img src="/img/c1.png" alt="" class="mat__icon">
+								<p>
+									Документы
+								</p>
+							</a>
+							<a href="#" class="mat__item">
+								<img src="/img/c2.png" alt="" class="mat__icon">
+								<p>
+									Вопрос - ответ
+								</p>
+							</a>
+							<a href="#" class="mat__item">
+								<img src="/img/c3.png" alt="" class="mat__icon">
+								<p>
+									Шаблоны договоров
+								</p>
+							</a>
+							<a href="#" class="mat__item">
+								<img src="/img/c4.png" alt="" class="mat__icon">
+								<p>
+									Тех поддержка
+								</p>
+							</a>
+						</div>
 					</div>
 					<div class="area__info">
 						<h2>
@@ -231,29 +255,6 @@
 									info@carbonzero.ru
 								</a>
 							</div>
-						</div>
-						<div class="call__item q">
-							<div class="call__block">
-								<img src="/img/a3.png" alt="">
-							</div>
-							<div class="call__content">
-								<p class="call__info">
-									г. Москва, Центр международной <br>
-									торговли, Краснопресненская наб., <br>
-									дом 12, офис 1503
-								</p>
-							</div>
-						</div>
-						<div class="call__socials q">
-							<a href="#" class="call__link" target="_blank">
-								<img src="/img/a4.png" alt="">
-							</a>
-							<a href="#" class="call__link" target="_blank">
-								<img src="/img/a5.png" alt="">
-							</a>
-							<a href="#" class="call__link" target="_blank">
-								<img src="/img/a6.png" alt="">
-							</a>
 						</div>
 						<a href="#" class="btn area__btn">
 							Оставить заявку
@@ -411,47 +412,6 @@
 				</div>
 			</div>
 		</footer>
-		<script type="text/javascript">
-			ymaps.ready(init);
-
-			function init() {
-				var myMap = new ymaps.Map("map", {
-					// Центр карты, указываем коордианты
-					center: [55.754203, 37.556388],
-					// Масштаб, тут все просто
-					zoom: 14,
-					// Отключаем все элементы управления
-					controls: []
-				});
-
-				var myGeoObjects = [];
-
-				// Наша метка, указываем коордианты
-				myGeoObjects = new ymaps.Placemark([55.754203, 37.556388], {
-					balloonContentBody: 'carbon ',
-				}, {
-					iconLayout: 'default#image',
-					// Путь до нашей картинки
-					iconImageHref: '/img/map.png',
-					// Размер по ширине и высоте
-					iconImageSize: [35, 41],
-					// Смещение левого верхнего угла иконки относительно
-					// её «ножки» (точки привязки).
-					iconImageOffset: [-35, -35]
-				});
-
-				var clusterer = new ymaps.Clusterer({
-					clusterDisableClickZoom: false,
-					clusterOpenBalloonOnClick: false,
-				});
-
-				clusterer.add(myGeoObjects);
-				myMap.geoObjects.add(clusterer);
-				// Отлючаем возможность изменения масштаба
-				myMap.behaviors.disable('scrollZoom');
-
-			}
-		</script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
 
