@@ -11,24 +11,24 @@
       transform: rotate(90deg)
       fill: $green
 input::-webkit-input-placeholder 
-   color: #7d7d7d !important
+   color: rgb(147, 147, 147) !important
 input::-moz-placeholder
-   color: #7d7d7d !important
+   color: rgb(147, 147, 147) !important
 input:-ms-input-placeholder 
-   color: #7d7d7d !important
+   color: rgb(147, 147, 147) !important
 input:-moz-placeholder 
-   color: #7d7d7d !important
+   color: rgb(147, 147, 147) !important
 textarea::-webkit-input-placeholder 
-   color: #7d7d7d !important
+   color: rgb(147, 147, 147) !important
 textarea::-moz-placeholder
-   color: #7d7d7d !important
+   color: rgb(147, 147, 147) !important
 textarea:-ms-input-placeholder 
-   color: #7d7d7d !important
+   color: rgb(147, 147, 147) !important
 textarea:-moz-placeholder 
-   color: #7d7d7d !important
+   color: rgb(147, 147, 147) !important
 .menu-btn, .menu
    display: none
-.popup__bg, .popup__bg2, .popup__bg3, .popup__bg4, .popup__bg5, .popup__bg6, .popup__bg7, .popup__bg8, .popup__bg9
+.popup__bg, .popup__bg2
    position: fixed
    top: 0
    left: 0
@@ -40,12 +40,14 @@ textarea:-moz-placeholder
    transition: 0.5s all
    overflow-y: auto
    overflow-x: hidden
-.popup__bg.active, .popup__bg2.active, .popup__bg3.active, .popup__bg4.active, .popup__bg5.active, .popup__bg6.active, .popup__bg7.active, .popup__bg8.active, .popup__bg9.active
-    opacity: 1
-    pointer-events: all
-    transition: 0.5s all
-    z-index: 22
-.popup, .popup2, .popup3, .popup4, .popup5, .popup6, .popup7, .popup8, .popup9
+.popup__bg.active, .popup__bg2.active
+   opacity: 1
+   pointer-events: all
+   transition: 0.5s all
+   z-index: 22
+   backdrop-filter: blur(7.6px)
+   background: rgba(38, 50, 56, 0.6)
+.popup, .popup2
    position: absolute
    top: 49%
    left: 50%
@@ -55,20 +57,35 @@ textarea:-moz-placeholder
    transition: 0.5s all
    background: white
    padding: 50px
+   &__thank 
+      display: block
+      margin: 10px auto
+   &__txt 
+      margin-top: 25px
+      color: rgb(38, 50, 56)
+      font-size: 18px
+      font-weight: 400
+      line-height: 26px
+      text-align: center
+   .call__form textarea
+      min-height: 80px
    &__title 
       text-align: center
-      margin-bottom: 25px
+      margin-bottom: 18px
       font-size: 30px
+      color: rgb(38, 50, 56)
    &__text
       text-align: center
       font-size: 16px
-      margin-bottom: 60px
+      color: rgb(38, 50, 56)
+      margin-bottom: 50px
+      line-height: 26px
    .call__form
       margin-top: 0
       top: 0
       input, textarea
-         font-size: 15px
-         margin-bottom: 50px
+         font-size: 16px
+         margin-bottom: 40px
    .call__row
       margin-top: -20px
    .call__form .custom-checkbox + label
@@ -80,11 +97,15 @@ textarea:-moz-placeholder
    .call__btn
       width: 181px
       height: 50px
-      font-size: 15px
-.popup.active, .popup2.active, .popup3.active, .popup4.active,  .popup5.active, .popup6.active, .popup7.active, .popup8.active, .popup9.active
+      color: rgb(40, 40, 40)
+      font-size: 14px
+      font-weight: 400
+      line-height: 26px
+      text-transform: uppercase
+.popup.active, .popup2.active
    transform: translate(-50%, -46%) scale(1)
    transition: 0.5s all
-.close-popup, .close-popup2, .close-popup3, .close-popup4, .close-popup5,  .close-popup6, .close-popup7, .close-popup8, .close-popup9
+.close-popup, .close-popup2
    position: absolute
    top: 20px
    right: 20px
@@ -520,12 +541,12 @@ textarea:-moz-placeholder
    margin-bottom: 16px
    flex-wrap: wrap
    a 
-      color: #a6a6a6
-      font-family: 'PT Root UI'
+      color: rgb(166, 166, 166)
+       
       font-size: 13px
       line-height: 26px
       &:after 
-         content: ">"
+         content: "/"
          display: inline-block
          margin: 0 10px
          color: #545454 !important
@@ -534,7 +555,7 @@ textarea:-moz-placeholder
       &:hover 
          color: $green
       &:last-child
-         color: #545454
+         color: rgb(0, 0, 0)
 .mob 
    display: none
 #fromSlider 
@@ -797,7 +818,7 @@ textarea:-moz-placeholder
       margin-right: 37px
    &__link 
       font-size: 15px
-      font-family: 'PT Root UI'
+       
       width: 181px
       height: 49px
       img 
@@ -867,20 +888,30 @@ textarea:-moz-placeholder
 .footer 
    padding: 89px 0 23px
    position: relative
+   z-index: 3
+   &__logo 
+      margin-bottom: 20px
+   .footer__bg_2
+      z-index: 0
    &__left 
       margin-top: -7px
+      position: relative
+      z-index: 2
    &__tel 
       display: block
-      color: #1c1c1c
-      font-family: 'PT Root UI'
-      margin: 22px 0 0px
+      margin: 10px 0 0px
+      color: rgb(40, 40, 40)
       font-size: 18px
+      font-weight: 400
+      line-height: 22px
+      &:hover 
+         color: $green
    &__bg 
       position: absolute
       z-index: -1
       bottom: 0
       left: 0
-      width: 100%
+      width: 105%
    .call__socials 
       margin-top: 31px
       .call__link 
@@ -890,10 +921,10 @@ textarea:-moz-placeholder
             background: black
             border: 1px solid $green
    &__title 
+      color: rgb(40, 40, 40)
       font-size: 16px
-      font-weight: bold
-      color: #1c1c1c
-      line-height: 1.5
+      font-weight: 700
+      line-height: 22px
       margin-bottom: 43px
    &__content
       justify-content: flex-start
@@ -916,13 +947,14 @@ textarea:-moz-placeholder
       align-items: flex-start
    &__list 
       li
-         margin-bottom: 20px
+         margin-bottom: 12px
          &:last-child
             margin-bottom: 0
          a 
-            color: #5a5a5a
+            color: rgb(90, 90, 90)
             font-size: 15px
-            font-family: 'PT Root UI'
+            font-weight: 400
+            line-height: 18px
             &:hover 
                color: $green
    &__item 
@@ -941,27 +973,30 @@ textarea:-moz-placeholder
       justify-content: space-between
       align-items: center
    &__last 
-      border-top: 1px solid #dddddd
+      border-top: 1px solid rgb(232, 232, 232)
       padding-top: 31px
       margin-top: 45px
+      position: relative
+      z-index: 2
    &__mind
-      color: #8c8c8c
-      font-family: 'PT Root UI'
-      line-height: 1.71
+      color: rgb(140, 140, 140)
       font-size: 14px
+      font-weight: 400
+      line-height: 17px
    &__policy 
-      color: #8c8c8c
-      font-family: 'PT Root UI'
-      line-height: 1.71
+      color: rgb(140, 140, 140)
       font-size: 14px
+      font-weight: 400
+      line-height: 17px
       position: relative
       left: -44px
    &__com
       p 
-         color: #8c8c8c
-         font-family: 'PT Root UI'
+         color: rgb(140, 140, 140)
          font-size: 14px
-         margin-bottom: 10px
+         font-weight: 400
+         line-height: 17px
+         margin-bottom: 5px
 .info 
    padding: 116px 0
    background: rgb(251,251,251)
@@ -1035,7 +1070,7 @@ textarea:-moz-placeholder
       transition: 0.5s
       margin-bottom: 31px
       background: white
-      padding: 41px 25px 21px 38px
+      padding: 41px 24px 21px 38px
       &:nth-child(2), &:nth-child(6)
          border: 1px solid  #1f1f1f
          background: transparent
@@ -1054,12 +1089,29 @@ textarea:-moz-placeholder
                   fill: $green
          .info__icon
             opacity: 0.05
-      &:nth-child(1)
+      &:nth-child(1), &:nth-child(6)
+         background: rgb(25, 25, 25)
          .info__icon
             opacity: 0.05
+            opacity: 1
+         .info__name
+            color: rgb(186, 240, 72)
+         .info__btn 
+            background: transparent
+            border: 1px solid $green
+            .svg 
+               path 
+                  fill: $green
          &:hover 
             .info__icon
                opacity: 1
+      &:nth-child(4)
+         .info__icon
+            opacity: 1
+      &:nth-child(6)
+         background: rgb(69, 69, 69)
+         .info__icon
+               opacity: 0.05
    &__name 
       color: #232323
       font-size: 18px
@@ -1213,7 +1265,7 @@ textarea:-moz-placeholder
       align-items: center
       color: #83868c
       font-size: 13px
-      font-family: 'PT Root UI'
+       
       position: relative
       z-index: 1
       img 
@@ -1298,17 +1350,17 @@ textarea:-moz-placeholder
       margin-bottom: 36px
    &__name 
       font-size: 15px
-      font-family: 'PT Root UI'
+       
       font-weight: 500
       color: #9d9d9d
       margin-bottom: 5px
    &__tel
       color: #e5e5e5
-      font-family: 'PT Root UI'
+       
       font-size: 15px
    &__info 
       color: #e5e5e5
-      font-family: 'PT Root UI'
+       
       font-size: 15px
       line-height: 1.67
    &__socials 
@@ -1336,7 +1388,7 @@ textarea:-moz-placeholder
          border: none
          border-bottom: 1px solid #d3d3d3
          font-size: 18px
-         font-family: 'PT Root UI'
+          
          padding-bottom: 14px
          margin-bottom: 63px
          background: transparent
@@ -1346,7 +1398,7 @@ textarea:-moz-placeholder
          min-height: 99px
          font-size: 18px
          background: transparent
-         font-family: 'PT Root UI'
+          
          border: none
          border-bottom: 1px solid #d3d3d3
       .custom-checkbox + label
@@ -1360,11 +1412,14 @@ textarea:-moz-placeholder
       justify-content: space-between
       margin-top: 37px
    &__btn 
-      width: 214px
+      width: 207px
       height: 60px
       margin-left: 30px
-      font-family: 'PT Root UI'
-      font-size: 16px
+      color: rgb(40, 40, 40)
+      font-size: 14px
+      font-weight: 400
+      line-height: 26px
+      text-transform: uppercase
 [class*="ymaps-"][class*="-ground-pane"] 
    filter: grayscale(100) !important
 .nav 
@@ -1373,11 +1428,10 @@ textarea:-moz-placeholder
       align-items: center
       justify-content: space-between
    &__logo 
-      width: 177px
+      width: 130px
       display: flex
       flex: 1 0 auto 
-      max-width: 177px
-      height: 75px
+      max-width: 130px
       img 
          width: 100%
          height: 100%
@@ -1388,7 +1442,7 @@ textarea:-moz-placeholder
       margin-left: 62px
       justify-content: space-between
    .lang_select--selected
-      color: #282828
+      color: rgb(0, 0, 0)
       font-size: 16px
       font-weight: 400
       line-height: 1.56
@@ -1439,7 +1493,7 @@ textarea:-moz-placeholder
       font-size: 50px
       font-weight: 900
       line-height: 1.2
-      margin-bottom: 56px
+      margin-bottom: 40px
       text-transform: uppercase
       color: #282828
    .nav 
@@ -1459,6 +1513,8 @@ textarea:-moz-placeholder
             background-color: #282828
 .area 
    padding: 26px 0 131px
+   position: relative
+   z-index: 3
    &__box 
       justify-content: space-between
       align-items: flex-start
@@ -1469,6 +1525,7 @@ textarea:-moz-placeholder
       width: 100%
       max-width: 401px 
       border-radius: 20px
+      box-shadow: 0px -11px 54.1px 0px rgba(0, 0, 0, 0.15)
       position: relative
       z-index: 2
       flex: 1 0 auto 
@@ -1477,15 +1534,43 @@ textarea:-moz-placeholder
       background: white
       h2 
          font-size: 25px
+         color: rgb(40, 40, 40)
+      &_tags 
+         margin-top: 46px
+   &__tags 
+      padding-top: 20px
+      margin-top: 20px
+      flex-wrap: wrap 
+      justify-content: flex-start
+      border-top: 1px solid rgb(233, 233, 233)
+      a 
+         border-radius: 5px
+         background: rgb(248, 248, 248)
+         margin-right: 8px
+         margin-bottom: 8px
+         display: flex
+         align-items: center
+         justify-content: center
+         width: max-content
+         padding: 0 13px
+         height: 28px
+         color: rgb(0, 0, 0)
+         font-size: 10px
+         font-weight: 400
+         line-height: 12px
+         text-transform: uppercase
+         &:hover 
+            background: $green
+            color: white
    &__sub 
       font-size: 14px
       font-weight: 300
       line-height: 1.71
-      color: #8e8e8e
+      color: rgb(142, 142, 142)
       margin-top: 8px
       padding-bottom: 25px
       margin-bottom: 28px
-      border-bottom: 1px solid #ededed
+      border-bottom: 1px solid rgb(233, 233, 233)
    .call__block
       width: 14px
       margin-right: 13px
@@ -1495,17 +1580,16 @@ textarea:-moz-placeholder
          top: 5px
    .call__tel
       font-size: 16px
-      font-weight: 300
-      color: #000
+      font-weight: 400
+      color: rgb(40, 40, 40)
       &:hover 
          color: $green
    .call__item
       margin-bottom: 27px
    .call__info
       font-size: 16px
-      font-weight: 300
-      font-family: 'Formular'
-      color: #000
+      font-weight: 400
+      color: rgb(40, 40, 40)
       line-height: 1.63
    .call__socials 
       margin-top: 9px
@@ -1518,6 +1602,7 @@ textarea:-moz-placeholder
    &__btn 
       width: 100%
       font-size: 15px
+      text-transform: uppercase
       margin: 37px auto 52px
    &__content 
       width: 100%
@@ -1525,8 +1610,8 @@ textarea:-moz-placeholder
       // margin-top: 41px
       #map 
          width: 100%
-         height: 827px
-         border-radius: 0px 100px 0 62px
+         height: 771px
+         border-radius: 0px 100px 0 50px
          overflow: hidden
 .menu-btn2.active
    z-index: 60
@@ -1561,42 +1646,44 @@ textarea:-moz-placeholder
       h2 
          font-size: 25px
    &__img 
-      width: 329px
-      height: 251px
+      width: 330px
+      height: 250px
       border-radius: 10px
-      margin-right: 50px
+      margin-right: 34px
       flex: 1 0 auto 
-      max-width: 329px
+      max-width: 330px
       overflow: hidden
       object-fit: cover
    &__el 
       width: 100%
       align-items: center
-      padding-bottom: 50px
-      border-bottom: 1px solid #eee
-      margin-bottom: 50px
+      border-radius: 20px
+      background: rgb(255, 255, 255)
+      margin-bottom: 34px
+      padding: 28px 32px
       &:hover 
          .news-page__name
             color: $green
    &__time 
+      color: rgb(131, 134, 140)
       font-size: 14px
-      font-weight: 300
-      color: #8b8b8b
-      margin-bottom: 26px
+      font-weight: 400
+      line-height: 17px
+      margin-bottom: 16px
       span 
          margin: 0 5px
    &__name 
       transition: 0.5s 
-      margin-bottom: 21px
+      margin-bottom: 16px
+      color: rgb(40, 40, 40)
       font-size: 22px
-      font-weight: 300;
-      line-height: 1.45
-      color: #000
+      font-weight: 400
+      line-height: 32px
    &__text 
+      color: rgb(40, 40, 40)
       font-size: 14px
-      font-weight: 300
-      line-height: 1.71
-      color: #000
+      font-weight: 400
+      line-height: 24px
    &__nav 
       align-items: center
       margin-top: 60px
@@ -1607,7 +1694,9 @@ textarea:-moz-placeholder
          align-items: center
          border-radius: 50%
          justify-content: center
+         transition: 0.5s
          margin-right: 18px
+         background: rgb(247, 247, 247)
          a 
             font-size: 15px
             font-weight: 300
@@ -1618,9 +1707,11 @@ textarea:-moz-placeholder
             align-items: center
             justify-content: center
          &.active 
-            background: $yel
+            background: $yel !important
          &:last-child
             margin-right: 0
+         &:hover 
+            background: $green
    &__area 
       padding-top: 16px
       margin-top: 20px
@@ -1658,12 +1749,13 @@ textarea:-moz-placeholder
       width: 100%
       height: 60px
       background: transparent
-      font-family: 'PT Root UI'
+       
       margin-top: 20px
       border-radius: 30px
       font-size: 16px
       border: 1px solid #282828
 .news-item 
+   background: #f9f9f9
    &__pic 
       width: 100%
       height: 435px
@@ -1695,7 +1787,7 @@ textarea:-moz-placeholder
       &:last-child
          margin-bottom: 0
    &__box 
-      padding-bottom: 80px
+      padding-bottom: 60px
       margin-bottom: 50px
       border-bottom: 1px solid #dfdfdf
    &__title 
@@ -1705,27 +1797,61 @@ textarea:-moz-placeholder
 .mat 
    &__box 
       width: 100%
-      justify-content: space-between
-      flex-wrap: wrap 
+      margin-top: 50px
    &__item 
-      display: block
-      width: 100%
-      border-radius: 10px
-      background-color: #f2f2f2
-      height: 296px
-      text-align: center
-      width: 48%
       display: flex
-      margin-bottom: 35px
-      flex-direction: column 
+      align-items: center
+      overflow: hidden
+      padding-bottom: 50px
+      margin-bottom: 50px
+      border-bottom: 1px solid rgb(238, 238, 238)
+      span 
+         display: flex
+         align-items: center
+         justify-content: center
+         width: 156px
+         height: 29px
+         border-radius: 10px
+         background: rgb(186, 240, 72)
+         margin-bottom: 16px
+         color: rgb(40, 40, 40)
+         font-size: 14px
+         font-weight: 400
+         line-height: 17px
+      h3 
+         margin-bottom: 16px
+         margin-top: 0
+         color: rgb(40, 40, 40)
+         font-size: 22px
+         line-height: 32px
+         font-weight: 400
+         transition: 0.5s
+      p 
+         color: rgb(40, 40, 40)
+         font-size: 14px
+         line-height: 24px
+      &:hover 
+         h3 
+            color: $green
+   &__image 
+      display: flex
       align-items: center
       justify-content: center
-      p 
-         font-size: 23px
-         margin-top: 40px
-         color: #000
-      &:hover 
-         background: $green
+      width: 330px
+      height: 250px
+      box-sizing: border-box
+      border: 1px solid rgb(225, 225, 225)
+      border-radius: 10px
+      background: rgb(255, 255, 255)
+      padding: 20px 30px 
+      img 
+         width: 100%
+         height: 100%
+         object-fit: cover
+   &__content 
+      width: 100%
+      max-width: 438px
+      margin-left: 40px
 .events 
    .news-page__nav
       margin-top: 40px
@@ -1760,21 +1886,21 @@ textarea:-moz-placeholder
             color: $green
    &__pic 
       width: 100%
-      height: 268px
+      height: 250px
       border-radius: 10px
       overflow: hidden 
-      margin-bottom: 30px
+      margin-bottom: 25px
       object-fit: cover
    &__time 
       align-items: center
       justify-content: center
       width: 160px
       height: 31px
+      color: rgb(40, 40, 40)
       border-radius: 10px
       background-color: #caf059
-      color: #3f3f3f
       font-size: 14px
-      margin-bottom: 24px
+      margin-bottom: 16px
       span 
          margin: 0 10px
    &__text 
@@ -1789,32 +1915,35 @@ textarea:-moz-placeholder
    &__info 
       font-size: 25px
       font-weight: 300
-      line-height: 2
-      margin-bottom: 50px
+      line-height: 35px
+      color: rgb(40, 40, 40)
+      margin-bottom: 40px
       width: 100%
-      max-width: 762px
+      max-width: 99%
    &__pic 
       width: 100%
-      height: 421px
+      height: 440px
       border-radius: 10px
       object-fit: cover
-      margin-bottom: 50px
+      margin-bottom: 30px
    &__title 
       font-size: 21px
       font-weight: 500
-      margin-bottom: 30px
+      margin-bottom: 25px
    &__list 
       margin-bottom: 30px
+      padding-left: 10px
       li 
          font-size: 16px
          font-weight: 400
-         line-height: 1.69
+         color: rgb(40, 40, 40)
+         line-height: 28px
    &__text 
       font-size: 16px
       font-weight: 400
-      line-height: 1.69
+      color: rgb(40, 40, 40)
+      line-height: 28px
       width: 100%
-      max-width: 670px
       a 
          color: #000
          &:hover 
@@ -1847,7 +1976,7 @@ textarea:-moz-placeholder
    .header__sub
       font-size: 16px
       color: white
-      font-family: 'PT Root UI'
+       
       margin-bottom: 30px
       line-height: 161%
    .header__btn 
@@ -1860,35 +1989,41 @@ textarea:-moz-placeholder
       left: 50%   
       margin-left: -29px
 .faq 
+   background: linear-gradient(180.00deg, rgb(249, 249, 249) 56.901%,rgb(255, 255, 255) 75.052%)
+   padding-bottom: 115px
    &__box
       width: 100%
+      position: relative
+      z-index: 2
       max-width: 63%
       .accordeon__button 
          font-size: 24px
          font-weight: 300
          line-height: 1.13
+         color: rgb(40, 40, 40)
          letter-spacing: normal
-         color: #000
          &:after 
             background: url(/img/plus.png) no-repeat !important
-            width: 20px
-            height: 20px
-            top: 5px
+            width: 26px
+            height: 28px
+            top: 3px
       .accordeon__item 
          margin-bottom: 60px
          &:last-child
             margin-bottom: 0
-      .accordeon
-         padding: 0
+      .accordeon-faq
+         margin-top: 40px
+         border-radius: 20px
+         background: rgb(255, 255, 255)
+         padding: 34px 40px
          width: 100%
          border-bottom: none
       .panel__info
-         font-size: 17px
          font-weight: 300
-         line-height: 1.59
-         letter-spacing: normal;
          text-align: left
-         color: #545454
+         color: rgb(40, 40, 40)
+         font-size: 16px
+         line-height: 26px
          width: 100%
       .panel__text
          max-width: 800px
@@ -1897,22 +2032,25 @@ textarea:-moz-placeholder
          width: 20px
          height: 20px
          top: 0
+   .wave
+      z-index: 0
 .stat 
+   background: linear-gradient(180.00deg, rgb(249, 249, 249) 68.111%,rgb(255, 255, 255) 79.463%)
    &__sub 
       width: 100%
       max-width: 775px 
-      font-size: 16px
+      margin-bottom: 40px
+      margin-top: -10px
+      color: rgb(40, 40, 40)
+      font-size: 18px
       font-weight: 300
-      line-height: 1.63
-      color: #2d2d2d
-      margin-bottom: 59px
-      margin-top: -20px
+      line-height: 28px
    &__block 
       width: 100%
       height: auto
       padding: 66px 30px 44px 32px
-      border-radius: 10px
-      border: 1px solid #dfdfdf
+      border-radius: 20px
+      background: rgb(255, 255, 255)
       margin-bottom: 33px
       &:last-child
          margin-bottom: 0
@@ -1921,6 +2059,11 @@ textarea:-moz-placeholder
    &__box 
       width: 100%
       max-width: 64%
+      .about__area
+         padding: 0
+         background: transparent
+         &:before 
+            display: none
    &__pic 
       width: 100%
    &__name 
@@ -1929,64 +2072,79 @@ textarea:-moz-placeholder
       margin-bottom: 12px
 .stat__box_2
    .stat__sub
-      font-size: 17px
-      line-height: 1.76
+      color: rgb(40, 40, 40)
+      font-size: 18px
+      font-weight: 300
+      line-height: 28px
       max-width: 100%
    .stat2__text 
+      color: rgb(40, 40, 40)
+      font-size: 18px
       font-weight: 300
-      font-size: 17px
-      line-height: 1.76
-      margin-top: 54px
+      line-height: 28px
+      margin-top: 40px
 .form 
+   background: #f9f9f9
    &__main 
       width: 100%
+      border-radius: 20px
+      background: rgb(255, 255, 255)
+      padding: 30px 35px
+      box-sizing: border-box
       .form-check-label
          display: flex
-         color: #939393
-         font-size: 17px
+         font-size: 18px
          font-weight: 300
+         color: rgb(147, 147, 147)
          a 
-            color: #2d2d2d
+            color: rgb(40, 40, 40)
             &:hover 
                color: $green
       input 
          width: 100%
-         height: 61px
+         height: 60px
+         border: 1px solid rgb(223, 223, 223)
          border-radius: 10px
+         font-weight: 300
          padding-left: 28px
-         font-size: 17px
-         border: solid 1px #dfdfdf
+         font-size: 18px
          &:focus 
             border: solid 1px $green
       label 
          display: block
-         font-size: 17px
+         color: rgb(40, 40, 40)
+         font-size: 18px
          font-weight: 300
-         margin-bottom: 16px
+         line-height: 28px
+         margin-bottom: 10px
       textarea
          padding: 22px 0 0 28px
          font-size: 17px
          width: 100%
-         border: solid 1px #dfdfdf
+         border: 1px solid rgb(223, 223, 223)
          max-width: 100% 
          border-radius: 10px
          min-height: 169px
          &:focus 
             border: solid 1px $green
       .custom-checkbox + label::before
-         width: 20px
-         height: 20px
-         max-width: 20px
          margin-right: 14px
-         border-radius: 3px
-         border: solid 1px #dfdfdf
-         background-size: 10px
+         width: 26px
+         height: 26px
+         box-sizing: border-box
+         border: 1px solid rgb(223, 223, 223)
+         border-radius: 5px
+         background-size: 13px
+         max-width: 26px
       .call__btn
-         width: 342px
-         font-size: 16px
+         width: 330px
          margin-top: 30px
          height: 60px
          margin-left: 0
+         color: rgb(40, 40, 40)
+         font-size: 14px
+         font-weight: 400
+         text-transform: uppercase
       input::-webkit-input-placeholder 
          color:  #939393 !important
       input::-moz-placeholder
@@ -2004,10 +2162,10 @@ textarea:-moz-placeholder
       textarea:-moz-placeholder 
          color:  #939393 !important
    &__item 
-      margin-bottom: 49px
+      margin-bottom: 35px
       width: 100%
       &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
-         width: 48%
+         width: 48.7%
    &__flex 
       justify-content: space-between
       flex-wrap: wrap
@@ -2044,12 +2202,18 @@ textarea:-moz-placeholder
       text-transform: uppercase 
       color: white
    &__btn 
-      width: 205px
+      width: 259px
       height: 60px
       font-size: 16px  
-      font-family: 'PT Root UI'
+      color: rgb(40, 40, 40)
+      font-size: 14px
+      font-weight: 400
+      text-transform: uppercase
 .about 
    padding: 26px 0 131px
+   background: rgb(249, 249, 249)
+   .area__btn
+      text-transform: uppercase
    .call__block 
       width: 14px
       margin-right: 13px
@@ -2061,6 +2225,8 @@ textarea:-moz-placeholder
            font-size: 16px
    &__box 
       width: 100%
+      position: relative
+      z-index: 3
       .swiper46
          overflow: hidden
          margin-top: 58px
@@ -2112,27 +2278,27 @@ textarea:-moz-placeholder
       width: 100%
       height: auto
       overflow: hidden
-      padding: 68px 40px 63px
-      border-radius: 10px
-      background-color: #f4f4f4
-      margin-bottom: 45px
+      box-sizing: border-box
+      border: 3px solid rgb(186, 240, 72)
+      border-radius: 20px
+      background: rgb(255, 255, 255)
+      padding: 47px 68px
+      margin: 35px 0
    &__title 
-      font-size: 37px
+      color: rgb(40, 40, 40)
+      font-size: 36px
       font-weight: 300
-      line-height: 0.73
-      color: #545454
-      margin-bottom: 30px
-   &__sub 
-      font-size: 25px
-      font-weight: 300
-      line-height: 1.08
-      color: #545454
-      margin-bottom: 90px
+      line-height: 44px
+      margin-bottom: 17px
    &__info 
-      font-size: 17px
-      font-weight: bold
-      line-height: 1.59
-      color: #545454
+      color: rgb(40, 40, 40)
+      font-size: 18px
+      font-weight: 300
+      line-height: 28px
+   &__per 
+      margin-top: 60px
+      h2 
+         margin-bottom: 40px
    &__row 
       margin-bottom: 85px
       justify-content: space-between
@@ -2140,26 +2306,27 @@ textarea:-moz-placeholder
       width: 47% 
       img 
          width: 100%
-         height: 255px
+         height: 250px
          object-fit: cover 
          overflow: hidden
          border-radius: 10px
-         margin-bottom: 40px
+         margin-bottom: 25px
    &__name 
-      font-size: 25px
+      color: rgb(40, 40, 40)
+      font-size: 24px
       font-weight: 300
-      line-height: 1.08
-      color: #545454
-      margin-bottom: 30px
+      line-height: 29px
+      margin-bottom: 16px
    &__text 
-      font-size: 17px
+      color: rgb(40, 40, 40)
+      font-size: 18px
       font-weight: 300
-      line-height: 1.59
-      color: #545454
+      line-height: 28px
    &__area  
-      padding: 84px 50px 116px 0
+      padding: 40px 50px 45px 0
       background-color: #f6f6f6
       position: relative
+      margin-top: 80px
       .art__arrows
          margin-left: 60px
       &:before 
@@ -2190,7 +2357,7 @@ textarea:-moz-placeholder
          font-size: 50px
 .why 
    position: relative
-   background: #f9f9f9
+   // background: #f9f9f9
    .stat__box
       max-width: 65%
    h1 
@@ -2223,7 +2390,7 @@ textarea:-moz-placeholder
          margin-top: 22px
          font-size: 18.5px
          line-height: 1.51
-         font-family: 'PT Root UI'
+          
          color: #1a1a1a
    &__bot 
       justify-content: space-between
@@ -2250,7 +2417,7 @@ textarea:-moz-placeholder
             p 
                font-size: 18.5px
                font-weight: bold
-               font-family: 'PT Root UI'
+                
                line-height: 1.51
                text-transform: uppercase
                color: #fbfbfb
@@ -2283,10 +2450,73 @@ textarea:-moz-placeholder
                p 
                   font-size: 18.5px
                   font-weight: bold
-                  font-family: 'PT Root UI'
+                   
                   line-height: 1.51
                   text-transform: uppercase
                   color: #fbfbfb
+   &__sb 
+      margin-top: 20px
+      line-height: 26px
+   &__energy 
+      margin-top: 60px
+      h2 
+         font-family: 'Oswald'
+         font-size: 50px
+         font-weight: 600
+         line-height: 61px
+         margin-bottom: 40px
+         text-transform: uppercase
+         span 
+            color: $green
+      img 
+         width: 100%
+         height: 380px
+         border-radius: 20px
+         object-fit: cover 
+         margin-bottom: 55px
+         overflow: hidden
+      &_2 
+         .why__per 
+            background: rgb(246, 246, 246)
+            margin-bottom: 0
+   &__partner 
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap 
+      div
+         width: 31.7%
+         margin-bottom: 30px
+         img 
+            width: 100%
+            object-fit: cover 
+            border-radius: 10px
+            height: 195px  
+            margin-bottom: 12px
+         p 
+            color: rgb(40, 40, 40)
+            font-size: 16px
+            font-weight: 700
+            line-height: 28px
+            margin-bottom: 8px
+         span 
+            color: rgb(40, 40, 40)
+            font-size: 16px
+            font-weight: 400
+            line-height: 28px
+   &__per
+      width: 100%
+      border-radius: 20px
+      background: rgb(255, 255, 255)
+      padding: 30px 35px 
+      margin-bottom: 55px
+      p 
+         color: rgb(0, 0, 0)
+         font-size: 17px
+         font-weight: 300
+         line-height: 26px
+         margin-bottom: 20px
+         &:last-child
+            margin-bottom: 0
    &__list 
       margin: -20px 0 90px
       li 
@@ -2295,19 +2525,26 @@ textarea:-moz-placeholder
          p 
             font-size: 17px
             margin-left: 12px
-            font-family: 'PT Root UI'
+             
             color: #3c3c3c
          &:last-child
             margin-bottom: 0
    &__area 
       width: 100%
       height: auto
-      padding: 73px 50px 78px 55px
+      padding: 40px
       border-radius: 20px
       background: white
       margin-bottom: 190px
-      img 
-         width: 100%
+      margin-top: 232px
+      p 
+         color: rgb(0, 0, 0)
+         font-size: 17px
+         font-weight: 300
+         line-height: 26px
+         margin-bottom: 25px
+         &:last-child
+            margin-bottom: 0
    &__sub 
       font-size: 16px
       font-weight: 300
@@ -2319,13 +2556,25 @@ textarea:-moz-placeholder
       justify-content: space-between
    .wave 
       position: absolute
-      top: 10px
+      top: 39px
       left: 0
       z-index: 0
       width: 100%
+      height: 1330px
+      object-fit: cover
    .about__box
       position: relative
       z-index: 2
+   .info__box
+      flex-direction: column
+      margin-top: 40px
+   .info__wrap
+      &:last-child
+         height: 244px
+         margin-left: 0
+         margin-top: 20px
+         width: 100%
+         max-width: 100%
 .doc
    &__row 
       align-items: flex-start
@@ -2344,7 +2593,7 @@ textarea:-moz-placeholder
    &__content 
       margin-left: 16px
    &__name 
-      font-family: 'PT Root UI'
+       
       font-size: 16px
       line-height: 1.75
       color: #3c3c3c
@@ -2352,7 +2601,7 @@ textarea:-moz-placeholder
    &__size 
       font-size: 14px
       color: #b2b2b2
-      font-family: 'PT Root UI'
+       
    &__link 
       font-size: 16px
       line-height: 1.75
@@ -2368,18 +2617,56 @@ textarea:-moz-placeholder
       text-align: center
       padding: 250px 0 140px
       position: relative
+      z-index: 4
       h1 
          font-size: 90px
          font-weight: 200
          line-height: 1.11
          color: white
          span 
-            padding: 10px 5px 
+            padding: 10px 5px 17px
             background: $green
             line-height: 100%
             display: block
             width: max-content
-            margin: 0 auto
+            margin: 5px auto 0
+   .header__num
+      display: flex
+      flex-direction: column 
+      align-items: center
+      color: rgb(40, 40, 40)
+      font-size: 50px
+      font-weight: 900
+      line-height: 26px
+      text-align: center
+      font-family: 'Formular', sans-serif
+      span 
+         font-size: 20px
+         font-weight: 400
+         display: block
+         line-height: 100%
+         margin: 14px auto
+   .header__one
+      color: rgb(40, 40, 40)
+      font-size: 18px
+      font-weight: 400
+      line-height: 26px
+      max-width: 397px
+      margin-right: 60px
+   .header__right img
+      margin-left: 40px
+   .header__area
+      background: #BAF048
+      padding: 84px 0 77px
+   .header__two
+      color: rgb(40, 40, 40)
+      font-size: 18px
+      font-weight: 700
+      line-height: 26px
+      margin-left: 60px
+   .header__row
+      justify-content: flex-end
+      margin-right: 9px
 .header
    &__area
       padding: 102px 0 84px 
@@ -2391,7 +2678,7 @@ textarea:-moz-placeholder
       width: 100%
       max-width: 476px
       font-size: 17px
-      font-family: 'PT Root UI'
+       
       line-height: 1.59
       color: #3c3c3c
       span 
@@ -2412,7 +2699,7 @@ textarea:-moz-placeholder
    &__two 
       font-size: 17px
       font-weight: 500
-      font-family: 'PT Root UI'
+       
       line-height: 1.59
       color: #3c3c3c
 .it 
@@ -2427,7 +2714,7 @@ textarea:-moz-placeholder
          align-items: flex-start
          margin-bottom: 60px
          p 
-            font-family: 'PT Root UI'
+             
             margin-left: 15px
             font-size: 17px
             line-height: 1.59
@@ -2450,53 +2737,131 @@ textarea:-moz-placeholder
       align-items: center
       margin-top: 60px
       justify-content: space-between
+      &_img 
+         margin-right: 20px
    &__item 
       align-items: flex-start
-      margin-left: 49px
+      margin-left: 44px
       p 
-         font-size: 16px
-         font-family: 'PT Root UI'
-         line-height: 1.75
-         color: #3c3c3c
-         margin: 15px 15px 0 0
-      &_3 
-         p 
-            white-space: nowrap
+         color: rgb(0, 0, 0)
+         font-size: 14px
+         white-space: nowrap
+         font-weight: 300
+         line-height: 24px
+         margin: 0px 30px 0 0 
    &__wrap 
       width: 105%
       margin-top: 40px
-      border-radius: 20px
       justify-content: space-between
-      padding: 45px 45px 50px 55px
-      border: 4px solid  #caf059
+      padding: 48px 60px 8px
+      flex-wrap: wrap
+      border: 3px solid rgb(186, 240, 72)
+      border-radius: 20px
+      margin-bottom: 50px
    &__el 
+      width: 48%
+      margin-bottom: 40px
       p 
-         margin-top: 20px
-         font-size: 16px
-         font-family: 'PT Root UI'
-         line-height: 1.63
-         color: #3c3c3c
+         margin-top: 13px
+         color: rgb(0, 0, 0)
+         font-size: 18px
+         font-weight: 300
+         line-height: 28px
+   &__text 
+      margin-bottom: 40px
+      color: rgb(40, 40, 40)
+      font-size: 18px
+      font-weight: 300
+      line-height: 28px
+   .news-page__wrap
+      .news-page__btn
+         height: 60px
+         border: 1px solid rgb(40, 40, 40)
+         border-radius: 100px
+         background: rgb(255, 255, 255)
+         color: rgb(40, 40, 40)
+         font-size: 14px
+         font-weight: 400
+         line-height: 26px
+         text-transform: uppercase
+         &:hover 
+            background: $green
+            border: 1px solid $green
+            color: white
+.it1
+   .it2__sub
+      font-size: 18px
+      line-height: 28px 
+      color: #282828
+      margin-bottom: 30px
+      ul
+         padding-left: 25px
+         li 
+            display: flex
+            align-items: flex-start
+            img 
+               margin-right: 12px
+               position: relative
+               top: 2px
+            p 
+               color: rgb(40, 40, 40)
+               font-size: 16px
+               font-weight: 300
+               line-height: 26px
+               margin-bottom: 15px
+            &:last-child
+               p 
+                  margin-bottom: 0
+   .it2__title_2
+      margin-top: 40px
+   .baze__pic
+      margin-bottom: 40px
 .call2 
    padding-top: 100px
 .it2 
    &__sub 
       font-size: 17px
-      font-family: 'PT Root UI'
+       
       line-height: 1.65
       color: #3c3c3c
       width: 100%
-      max-width: 725px
+      max-width: 100%
+      padding: 30px 50px 35px 30px
+      box-sizing: border-box
+      border-radius: 10px
+      background: rgb(255, 255, 255)
+      p 
+         margin-bottom: 20px
+   &__standart
+      width: 460px
+      border-radius: 100px
+      height: 86px
+      color: rgb(40, 40, 40)
+      font-size: 14px
+      font-family: 'Formular', sans-serif
+      font-weight: 400
+      line-height: 26px
+      margin-top: 35px
+      text-transform: uppercase
+      .svg 
+         margin-right: 20px
+         margin-left: 0 !important
+      &:hover 
+         .svg 
+            path 
+               fill: $yel
    &__wrap 
       position: relative
-      margin: 58px 0 120px
+      margin: 58px 0px
       .about__video
-         width: 210px
-         height: 210px
+         width: 154px
+         height: 154px
          left: inherit
          margin-left: 0
-         right: 10%
-         top: 0
-         margin-top: 0
+         right: 50%
+         top: 50%
+         margin-top: -77px
+         margin-right: -77px
          img 
             width: 100%
             height: 100%
@@ -2504,7 +2869,7 @@ textarea:-moz-placeholder
          p 
             font-size: 14px
             line-height: 1.36
-            font-family: 'PT Root UI'
+             
             color: #3c3c3c
             position: relative
             top: -51px
@@ -2521,10 +2886,11 @@ textarea:-moz-placeholder
                background: url(/img/figg.png) no-repeat center center
    &__pic 
       width: 100%
+      border-radius: 10px
    &__content 
       p
          font-size: 17px
-         font-family: 'PT Root UI'
+          
          line-height: 1.65
          color: #3c3c3c
          margin-bottom: 25px
@@ -2535,11 +2901,54 @@ textarea:-moz-placeholder
       margin-top: 30px
 .area__box_it
    .it2__title
-      margin-bottom: 35px
+      margin-bottom: 30px
+      font-size: 30px
+      font-weight: 600
+      line-height: 44px
+      text-transform: uppercase
+      font-family: 'Oswald'
+      span 
+         color: $green
+   .it__area 
+      .it2__title
+         font-size: 40px
+         line-height: 50px
+         margin: 40px 0
+   .why__partner
+      margin-top: 40px
+   .faq__box .accordeon__button
+      justify-content: flex-start
+      font-size: 30px
+      font-weight: 600
+      line-height: 44px
+      font-family: 'Oswald'
+      text-transform: uppercase
+      border-radius: 20px
+      background: rgb(255, 255, 255)
+      padding: 24px 38px
+      &:after 
+         background: url(/img/acc.svg) no-repeat !important
+         top: 43px
+         right: 20px
+      span 
+         color: $green
+         margin-right: 7px
+   .faq__box .accordeon__button.active:after
+      top: 35px
+   .faq__box .accordeon__item
+      margin-bottom: 20px
+   .faq__box .accordeon
+      margin-top: 40px
+   .about__area
+      background: transparent
+      padding-top: 0
+      padding-bottom: 0
+      &:before 
+         display: none
 .ser 
    padding: 92px 0 30px
    &__sub 
-      font-family: 'PT Root UI'
+       
       font-size: 17px
       line-height: 1.65
       color: #3c3c3c
@@ -2550,3 +2959,235 @@ textarea:-moz-placeholder
       width: 100%
       margin-top: 83px
       max-width: 822px
+.area__txt 
+   color: rgb(0, 0, 0)
+   font-size: 17px
+   font-weight: 300
+   line-height: 26px
+   margin-bottom: 25px
+   width: 100%
+   max-width: 777px
+.baze
+   &__pic 
+      width: 100%
+      margin: 20px 0 30px
+.it3 
+   &__row 
+      justify-content: space-between
+      flex-wrap: wrap 
+      margin-top: 50px
+   &__block 
+      margin-bottom: 40px
+   &__item 
+      width: 47%
+      margin-bottom: 30px
+      img 
+         width: 100%
+         height: 263px
+         object-fit: cover 
+         overflow: hidden
+         border-radius: 15px
+         margin-bottom: 25px
+      h3 
+         margin-top: 0
+         margin-bottom: 10px
+         color: rgb(40, 40, 40)
+         font-size: 20px
+         font-weight: 600
+         line-height: 30px
+         text-transform: uppercase
+         font-family: 'Oswald'
+      p 
+         color: rgb(40, 40, 40)
+         font-size: 14px
+         line-height: 23px
+         margin-bottom: 10px
+         padding-right: 48px
+      a 
+         display: flex
+         color: rgb(40, 40, 40)
+         font-size: 14px
+         align-items: center
+         font-weight: 500
+         line-height: 23px
+         .svg 
+            margin-left: 8px
+            position: relative
+            top: 1px
+         &:hover 
+            color: $green
+            .svg 
+               path 
+                  fill: $green
+.about__box.about__area
+   padding: 0
+   background: transparent
+   &:before 
+      display: none
+.news-main
+   .wave
+      z-index: -1
+.news-page__btn
+   background: rgb(186, 240, 72)
+   color: rgb(40, 40, 40)
+   font-size: 14px
+   font-weight: 400
+   line-height: 26px
+   text-transform: uppercase
+   border: 1px solid rgb(186, 240, 72)
+   &:hover 
+      background: transparent
+.it4 
+   &__row 
+      margin: 38px 0 60px 
+      justify-content: space-between
+      display: flex
+   &__block 
+      padding: 27px
+      border-radius: 20px
+      background: rgb(255, 255, 255)
+      width: 31.5%
+      p 
+         color: rgb(40, 40, 40)
+         font-size: 16px
+         font-weight: 300
+         line-height: 26px
+         margin-top: 16px
+.per 
+   background-color: #f9f9f9
+   margin-top: -110px
+   position: relative
+   z-index: 3
+   padding-bottom: 100px
+   ul
+      li 
+         display: flex
+         align-items: flex-start
+         img 
+            margin-right: 12px
+            position: relative
+            top: 2px
+         p 
+            color: rgb(40, 40, 40)
+            font-size: 16px
+            font-weight: 300
+            line-height: 26px
+            margin-bottom: 15px
+         &:last-child
+            p 
+               margin-bottom: 0
+   h2 
+      margin-bottom: 40px
+      font-size: 30px
+      font-weight: 600
+      line-height: 44px
+      text-transform: uppercase
+      font-family: 'Oswald'
+      span 
+         color: $green
+   &__wrap 
+      width: 100%
+      margin-bottom: 70px
+      overflow-x: auto 
+      img 
+         width: 100%
+         object-fit: contain
+   &__row 
+      border-radius: 10px
+      background: rgb(255, 255, 255)
+      padding: 40px
+   &__left 
+      max-width: 525px 
+      width: 100%
+      margin-right: 35px
+      img 
+         width: 100%
+         margin-top: 34px
+         height: 419px
+         border-radius: 10px
+         object-fit: cover
+      p 
+         max-width: 469px 
+         width: 100%
+   &__text 
+      color: rgb(40, 40, 40)
+      font-size: 20px
+      font-weight: 300
+      line-height: 30px
+   &__box 
+      margin-top: 40px
+   &__item 
+      width: 100%
+      overflow: hidden
+      border-radius: 10px
+      padding: 25px 29px
+      margin-bottom: 29px
+      h3 
+         margin-top: 0
+         margin-bottom: 22px
+         color: rgb(40, 40, 40)
+         font-size: 20px
+         font-weight: 400
+         line-height: 30px
+      &:nth-child(1)
+         background: rgb(242, 242, 242)
+      &:nth-child(2)
+         border: 2px solid rgb(186, 240, 72)
+         border-radius: 10px
+         background: rgb(255, 255, 255)
+.it3.area 
+   padding-bottom: 30px
+.nav-error 
+   background: rgb(252, 255, 242) !important
+   border-bottom: none !important
+   &__tel 
+      color: rgb(0, 0, 0)
+      font-size: 16px
+      font-weight: 400
+      line-height: 20px
+      &:hover 
+         color: $green
+.error 
+   height: 100vh
+   background: rgb(252, 255, 242)
+   &__wrap 
+      position: relative
+   &__fig 
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      z-index: 0
+   &__box 
+      margin: 8% auto
+      position: relative
+      z-index: 2
+      text-align: center
+      h1 
+         margin-top: 50px
+         margin-bottom: 23px
+      p 
+         color: rgb(40, 40, 40)
+         font-size: 18px
+         font-weight: 300
+         line-height: 28px
+         margin-bottom: 40px
+   &__socials 
+      justify-content: center
+      a 
+         width: 64px
+         height: 64px
+         display: flex
+         align-items: center
+         justify-content: center
+         border-radius: 100px
+         box-shadow: 0px 26px 47.9px 0px rgba(0, 0, 0, 0.1)
+         background: rgb(255, 255, 255)
+         margin-right: 20px
+         &:last-child
+            margin-right: 0
+         &:hover 
+            background: $green
+            path 
+               fill: white
+               

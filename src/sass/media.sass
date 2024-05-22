@@ -57,15 +57,20 @@
    .why__area
       margin-bottom: 100px
    .why .wave
-      top: 194px
+      top: 6px
    .header__two
       br 
         display: none
    .header__right img
       margin-left: 40px
-   .it__wrap
-      padding: 40px 20px 
+   .area__box_it .faq__box .accordeon__button
+      font-size: 27px
+   .it__el p
+      br 
+         display: none
 @media screen and (max-width: 1199px)
+   .why__energy h2
+      line-height: normal
    .menu-btn 
       width: 48px
       height: 24px
@@ -306,6 +311,32 @@
       max-width: 100%
    .doc__box 
       width: 100%
+   .why__area
+      margin-top: 0px
+      padding: 0
+   .area__txt
+      max-width: 100%
+   .why 
+      padding-bottom: 40px
+   .header-it .header__one
+      margin-right: 0
+   .header-it .header__right img
+      margin-left: auto
+   .header-it .header__two
+      margin-left: 0
+      max-width: 397px
+   .header-it .header__wrap h1
+      font-size: 72px
+   .per__row
+      flex-direction: column
+   .per__left
+      max-width: 100% 
+      margin-right: 0
+      margin-bottom: 30px
+   .per__left p
+      max-width: 100%
+   .per
+      margin-top: -50px
 @media ( max-width: 991px )
    input, textarea, select
       -webkit-appearance: none
@@ -392,16 +423,43 @@
          max-width: 100% 
          br 
             display: none
+   .area__box_it .faq__box .accordeon__button
+      font-size: 24px
+   .area__box_it .it2__title
+      br 
+        display: none 
+   .news-page__el
+      flex-direction: column
+   .news-page__img
+      margin-right: 0
+      margin-bottom: 20px
+   .it__row_img
+      margin-right: 0
+   .it__item p
+      white-space: inherit
+   .it4__row
+      flex-direction: column
+   .it4__block
+      width: 100%
+      margin-bottom: 30px
       &:last-child
          margin-bottom: 0
+   .error__box p
+      font-size: 16px
+      line-height: 23px
+   .menu-btn
+      top: 57px
 @media screen and (max-width: 767px)
+   .error__box 
+      img 
+         width: 100%
    .art__link img
       margin-left: 15px
    .art__content
       margin-left: 30px
    .art__data
-      left: -33px
-      font-size: 13px
+      left: -48px
+      font-size: 12px
    .popup, .popup2, .popup3, .popup4, .popup5, .popup6, .popup7, .popup8, .popup9
       width: 95%
       padding: 60px 20px
@@ -448,8 +506,6 @@
       border-radius: 20px
    .call__wrap
       width: 100%
-   .mat__item
-      width: 100%
    .faq__box .accordeon__button
       padding-right: 40px
       font-size: 21px
@@ -468,6 +524,17 @@
       font-size: 15px
       line-height: 1.5
       margin-bottom: 2px
+   .why__partner div
+      width: 48%
+   .it2__standart
+      width: 100%
+   .area__box_it .faq__box .accordeon__button
+      display: block
+      line-height: 130%
+   .it3__item
+      width: 100%
+   .header-it .header__wrap h1
+      font-size: 75px
 @media screen and (max-width: 576px)
    button:active, button:focus 
       outline: none
@@ -482,7 +549,7 @@
    input:focusout
       outline: none
    .mob 
-      display: block
+      display: block !important
    .art__arrows
       display: none
    .art .swiper44
@@ -512,7 +579,7 @@
    .eff__name
       font-size: 16px
    .eff__wrap
-      height: 578px
+      height: 625px
       margin: 40px 0
    .eff__block
       max-width: 345px
@@ -588,12 +655,13 @@
          position: relative
          padding-bottom: 40px
    .call 
-      padding-top: 80px
+      padding-top: 40px
    .info__item:last-child
       margin-bottom: 0 !important
    .page h1 
-      font-size: 32px
-      margin-bottom: 40px
+      font-size: 26px
+      line-height: 35px
+      margin-bottom: 25px
    .area__content
       margin-top: 20px
    .nav__logo 
@@ -630,6 +698,9 @@
    .news-page__name
       margin-bottom: 10px  
       font-size: 18px
+      line-height: 130%
+   .news-page__nav
+      justify-content: center
    .news-page__el
       padding-bottom: 40px
       margin-bottom: 40px
@@ -661,19 +732,12 @@
       line-height: 17px
    .area__box
       margin-top: 30px
-   .mat__item
-      height: 220px
-      &:last-child
-         margin-bottom: 0
-   .mat__item p 
-      font-size: 21px
-      margin-top: 25px
    .events__row .custom-checkbox + label
       font-size: 15px
    .events__row
       margin-bottom: 30px
    .events__pic
-      height: auto
+      height: 235px
       margin-bottom: 20px
    .events__time
       margin-bottom: 15px
@@ -781,6 +845,7 @@
       margin-bottom: 40px
    .about__info
       font-size: 14px
+      line-height: 24px
    .about__row
       margin-bottom: 60px
       flex-direction: column
@@ -806,7 +871,7 @@
    .about 
       .art__link 
          bottom: 66px
-         margin-left: -100px
+         margin-left: -90px
    .about__bottom
       margin-top: 60px
    .why__list li p
@@ -871,7 +936,8 @@
    .it2__wrap .about__video
       width: 100px
       height: 100px
-      top: -40px
+      margin-right: -50px
+      margin-top: -50px
    .area__box_it .it2__title
       margin-bottom: 25px
    .it2__sub
@@ -905,7 +971,121 @@
       width: 100%
    .nav
       padding: 20px 0
-
+   .why__area
+      padding: 0
+   .about__area
+      margin-top: 40px
+   .why__energy h2
+      line-height: normal 
+   .why__energy img
+      height: 300px
+      margin-bottom: 30px
+   .why__partner div
+      width: 100%
+      &:last-child
+         margin-bottom: 0
+   .it2__pic
+      height: 250px
+      object-fit: cover
+   .area__box_it .faq__box .accordeon__button
+      font-size: 21px
+   .area__box_it .faq__box .accordeon__button:after
+      top: 58%
+      margin-top: -10px
+   .area__box_it .faq__box .accordeon__button.active:after
+      top: 50%
+   .it2__standart
+      flex-direction: column
+      text-align: center
+      height: auto
+      padding: 10px 20px
+      font-size: 13px
+      line-height: 20px
+      .svg 
+         margin-right: 0
+         margin-bottom: 10px
+   .area__box_it .it2__title
+      font-size: 27px
+      line-height: 36px
+      margin-bottom: 20px
+   .area__box_it .faq__box .accordeon__button span
+      margin-right: 0
+   .it3__row
+      margin-top: 30px
+   .it3__item
+      margin-bottom: 50px
+      &:last-child
+         margin-bottom: 0
+   .it1 .it2__sub, .it__text
+      font-size: 16px
+      line-height: 26px
+   .mat__item
+      flex-direction: column 
+   .mat__image
+      width: 100%
+   .mat__content
+      margin-left: 0
+      margin-top: 25px
+   .it1 .it2__sub ul
+      padding-left: 0
+   .it__wrap
+      padding: 30px 20px
+   .it__el
+      &:last-child
+         margin-bottom: 0
+      p 
+         line-height: 24px
+         margin-top: 5px
+   .it4__row
+      margin: 25px 0 30px
+   .per__wrap img
+      width: 1000px
+   .per h2
+      margin-bottom: 25px
+   .per__text
+      font-size: 17px
+   .per__left img
+      height: 250px
+      margin-top: 20px
+   .per__left
+      margin-bottom: 25px  
+   .per ul li p
+      font-size: 15px
+      line-height: 24px
+      br 
+        display: none 
+   .per__item
+      padding: 25px 20px
+   .per
+      margin-top: -20px
+   .it__el
+      text-align: center
+   .it3.area
+      padding-bottom: 80px
+   .nav-error__tel
+      display: none
+   .error__box
+      margin-top: 15%
+   .form__main .form-check-label
+      align-items: flex-start
+   .faq__box
+      margin-bottom: 40px
+   .eff 
+      .art__link
+         bottom: -70px
+   .new__area 
+      .art__link
+         bottom: inherit
+         top: 430px
+      .swiper46
+         margin-bottom: 150px
+   .why__energy h2
+      margin-bottom: 30px
+   .it__box 
+      margin-bottom: 100px
+   .baze__pic
+      margin-bottom: 10px
+   
 
 
 
