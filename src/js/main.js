@@ -1224,7 +1224,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   const swiper44 = new Swiper('.swiper44', {
     slidesPerView: 3,
-    spaceBetween: 60,
+    spaceBetween: 78,
     pagination: {
       el: ".swiper-pagination44",
     },
@@ -1248,7 +1248,7 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 2
       },
       1200: {
-        spaceBetween: 60,
+        spaceBetween: 78,
         slidesPerView: 3
       }
     }

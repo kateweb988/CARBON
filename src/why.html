@@ -322,7 +322,7 @@
 							<div class="art__top d-flex">
 								<div class="art__left d-flex">
 									<h2>
-										Кейсы
+										Кейсы клиентов
 									</h2>
 									<div class="art__arrows d-flex">
 										<div class="swiper-button-prev44 art-arr">
@@ -771,10 +771,13 @@
 					<div id="map"></div>
 					<form action="success.php" class="call__form js-form" id="popupResult" method="post">
 						<div class="call__flex q">
-							<input type="text" name="name" placeholder="Имя">
-							<input type="text" name="surname" placeholder="Фамилия">
+							<input type="text" name="name" placeholder="Имя*">
+							<input type="text" name="surname" placeholder="Фамилия*">
 						</div>
-						<input type="text" name="name" placeholder="Название компании">
+						<div class="call__flex q">
+							<input type="tel" name="name" placeholder="Номер телефона*" class="tel">
+							<input type="text" name="name" placeholder="Название компании">
+						</div>
 						<input type="email" name="email" placeholder="Электронная почта">
 						<textarea name="text" placeholder="Чем мы можем Вам помочь?"></textarea>
 						<div class="call__row q">

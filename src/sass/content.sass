@@ -56,7 +56,7 @@ textarea:-moz-placeholder
    height: auto
    transition: 0.5s all
    background: white
-   padding: 50px
+   padding: 54px 50px
    &__thank 
       display: block
       margin: 10px auto
@@ -102,6 +102,8 @@ textarea:-moz-placeholder
       font-weight: 400
       line-height: 26px
       text-transform: uppercase
+.popup2 
+   padding: 50px
 .popup.active, .popup2.active
    transform: translate(-50%, -46%) scale(1)
    transition: 0.5s all
@@ -733,8 +735,8 @@ textarea:-moz-placeholder
    padding: 5px 0 30px
    border-bottom: 1px solid #f2f2f2
    margin-bottom: 15px
-   padding-left: 28px
-   padding-right: 28px
+   padding-left: 0px
+   padding-right: 0px
    width: 100%
 .accordeon__item 
    width: 100%
@@ -803,7 +805,7 @@ textarea:-moz-placeholder
    &__per 
       display: block
       width: 326px
-      height: 218px
+      height: 216px
       img 
          object-fit: cover
          width: 100%
@@ -829,7 +831,7 @@ textarea:-moz-placeholder
       overflow: hidden
       margin-top: 58px
       .swiper-slide 
-         border-radius: 5px
+         border-radius: 10px
          overflow: hidden
          background-color: #ffffff
          position: relative
@@ -842,11 +844,11 @@ textarea:-moz-placeholder
       opacity: 0
    &__data 
       color: #83868c
-      font-size: 12px
+      font-size: 14px
       line-height: 27px
       transform: rotate(270deg)
       position: absolute
-      left: -31px
+      left: -42px
       top: 69px
       white-space: nowrap
       img 
@@ -860,10 +862,9 @@ textarea:-moz-placeholder
       font-weight: 700
       font-size: 17px
       line-height: 29px
-      font-family: 'Formular'
-      margin: 19px 40px 30px 0
+      margin: 16px 40px 27px 0
       display: block
-      color: #23262d
+      color: black
    &__arrows 
       position: relative
    &-arr 
@@ -911,6 +912,7 @@ textarea:-moz-placeholder
       z-index: -1
       bottom: 0
       left: 0
+      max-height: 580px
       width: 105%
    .call__socials 
       margin-top: 31px
@@ -1061,16 +1063,16 @@ textarea:-moz-placeholder
    &__item  
       border-radius: 20px
       position: relative
-      width: 31.3%
+      width: 31.55%
       overflow: hidden
       display: flex
       flex-direction: column
       box-shadow: 0px 4px 95px 0 rgba(108, 108, 108, 0.19)
-      height: 239px
+      height: 218px
       transition: 0.5s
       margin-bottom: 31px
       background: white
-      padding: 41px 24px 21px 38px
+      padding: 30px 24px 21px 30px
       &:nth-child(2), &:nth-child(6)
          border: 1px solid  #1f1f1f
          background: transparent
@@ -1113,9 +1115,12 @@ textarea:-moz-placeholder
          .info__icon
                opacity: 0.05
    &__name 
-      color: #232323
-      font-size: 18px
+      color: black
+      font-size: 16px
+      line-height: 20px
       transition: 0.5s
+      position: relative
+      z-index: 2
       line-height: 24px
    &__icon 
       position: absolute
@@ -1146,7 +1151,7 @@ textarea:-moz-placeholder
       margin: 82px auto 0 
       max-width: 99%
    &__item 
-      width: 30.7%
+      width: 30.9%
       position: relative
       height: 456px
       overflow: hidden
@@ -1201,7 +1206,7 @@ textarea:-moz-placeholder
       background: white
       width: 100%
       max-width: 534px
-      padding: 50px 54px 67px 58px
+      padding: 36px 54px 44px 58px
       border-radius: 0px 100px 0 90px 
    &__title 
       margin-bottom: 23px
@@ -1209,6 +1214,7 @@ textarea:-moz-placeholder
       font-weight: 300
       font-stretch: normal
       font-style: normal
+      color: #000
       line-height: 1.25
    &__content 
       p 
@@ -1217,6 +1223,7 @@ textarea:-moz-placeholder
          font-stretch: normal
          font-style: normal
          line-height: 1.69
+         color: #000
          margin-bottom: 25px
          &:last-child
             margin-bottom: 0
@@ -1224,9 +1231,12 @@ textarea:-moz-placeholder
    padding: 82px 0px
    .art__link img
       margin-left: 40px
+   .art__top
+      padding-right: 31px
    &__box 
       margin-top: 65px
       justify-content: space-between
+      padding-right: 31px
    &__content 
       width: 100%
       justify-content: space-between
@@ -1245,10 +1255,10 @@ textarea:-moz-placeholder
       .news__time 
          color: #f6f8fb
       .news__name 
-         font-size: 17px
+         font-size: 18px
          font-weight: bold
          color: white
-         font-family: 'Montserrat'
+         line-height: 22px
          margin-top: auto
       &:hover 
          .news__name 
@@ -1264,18 +1274,17 @@ textarea:-moz-placeholder
    &__time 
       align-items: center
       color: #83868c
-      font-size: 13px
-       
+      font-size: 14px
       position: relative
       z-index: 1
       img 
          margin-right: 11px
    &__item 
-      padding: 34px 25px 21px 24px
+      padding: 23px 25px 20px 24px
       background-color: #f6f6f6
       display: block
       width: 48.4%
-      margin-bottom: 24px
+      margin-bottom: 28px
       &:nth-child(n+3)
          margin-bottom: 0
       .news__time 
@@ -1287,7 +1296,7 @@ textarea:-moz-placeholder
             color: $green
    &__name 
       font-weight: 500
-      color: #272733
+      color: black
       line-height: 1.71
       position: relative
       z-index: 1
@@ -1349,19 +1358,16 @@ textarea:-moz-placeholder
       align-items: flex-start
       margin-bottom: 36px
    &__name 
-      font-size: 15px
-       
+      font-size: 16px
       font-weight: 500
       color: #9d9d9d
       margin-bottom: 5px
    &__tel
       color: #e5e5e5
-       
-      font-size: 15px
+      font-size: 16px
    &__info 
       color: #e5e5e5
-       
-      font-size: 15px
+      font-size: 16px
       line-height: 1.67
    &__socials 
       margin-top: 40px
@@ -1388,8 +1394,7 @@ textarea:-moz-placeholder
          border: none
          border-bottom: 1px solid #d3d3d3
          font-size: 18px
-          
-         padding-bottom: 14px
+         padding-bottom: 18px
          margin-bottom: 63px
          background: transparent
       textarea 
@@ -1398,11 +1403,10 @@ textarea:-moz-placeholder
          min-height: 99px
          font-size: 18px
          background: transparent
-          
          border: none
          border-bottom: 1px solid #d3d3d3
       .custom-checkbox + label
-         font-size: 13px
+         font-size: 14px
    &__flex 
       justify-content: space-between
       input 
@@ -1441,6 +1445,20 @@ textarea:-moz-placeholder
       max-width: 860px 
       margin-left: 62px
       justify-content: space-between
+      .header--lang
+         &:first-child
+            img 
+               display: none
+         .lang_select.active
+            &:after
+               content: ""
+               display: block
+               width: 245px
+               height: 1px
+               background: black
+               position: absolute
+               bottom: -34px
+               left: 0
    .lang_select--selected
       color: rgb(0, 0, 0)
       font-size: 16px
@@ -1496,21 +1514,11 @@ textarea:-moz-placeholder
       margin-bottom: 40px
       text-transform: uppercase
       color: #282828
+   h2 
+      color: rgb(40, 40, 40)
+      font-size: 40px
    .nav 
-      border-bottom: 1px solid #efefef
-      background: white
-   .lang_select 
-      position: relative 
-      &.active 
-         &:after 
-            content: ""
-            display: block
-            position: absolute
-            bottom: -45px
-            left: 0
-            width: 100%
-            height: 1px
-            background-color: #282828
+      padding: 20px 0
 .area 
    padding: 26px 0 131px
    position: relative
@@ -1530,7 +1538,7 @@ textarea:-moz-placeholder
       z-index: 2
       flex: 1 0 auto 
       border: 1px solid #ededed
-      padding: 36px 29px
+      padding: 30px 29px
       background: white
       h2 
          font-size: 25px
@@ -1565,10 +1573,10 @@ textarea:-moz-placeholder
    &__sub 
       font-size: 14px
       font-weight: 300
-      line-height: 1.71
+      line-height: 24px
       color: rgb(142, 142, 142)
       margin-top: 8px
-      padding-bottom: 25px
+      padding-bottom: 18px
       margin-bottom: 28px
       border-bottom: 1px solid rgb(233, 233, 233)
    .call__block
@@ -1602,11 +1610,12 @@ textarea:-moz-placeholder
    &__btn 
       width: 100%
       font-size: 15px
+      max-width: 330px
       text-transform: uppercase
-      margin: 37px auto 52px
+      margin: 17px auto 52px
    &__content 
       width: 100%
-      max-width: 64.5%
+      max-width: 65.15%
       // margin-top: 41px
       #map 
          width: 100%
@@ -1640,7 +1649,7 @@ textarea:-moz-placeholder
       z-index: 2
       flex: 1 0 auto 
       border: 1px solid #ededed
-      padding: 36px 36px 50px
+      padding: 30px 36px 33px
       background: white
       margin-top: 49px
       h2 
@@ -1713,17 +1722,19 @@ textarea:-moz-placeholder
          &:hover 
             background: $green
    &__area 
-      padding-top: 16px
-      margin-top: 20px
+      padding-top: 19px
+      margin-top: 16px
       border-top: 1px solid #dfdfdf
    &__item 
       align-items: flex-start
-      padding-bottom: 20px
-      margin-bottom: 20px
+      padding-bottom: 15px
+      margin-bottom: 15px
       border-bottom: 1px solid #dfdfdf
       &:hover 
          .news-page__one
             color: $green
+      &:nth-child(n+4)
+         display: none
    &__pic 
       margin-right: 18px
       width: 61px
@@ -1731,7 +1742,7 @@ textarea:-moz-placeholder
       object-fit: cover
       border-radius: 50%
    &__one 
-      margin-bottom: 15px
+      margin-bottom: 8px
       font-size: 14px
       font-weight: 300
       line-height: 1.71
@@ -1740,17 +1751,16 @@ textarea:-moz-placeholder
    &__row 
       align-items: center
       p 
-         font-size: 13px
-         color: #3f3f3f
-         margin-left: 12px
+         font-size: 14px
+         color: rgb(131, 134, 140)
+         margin-left: 10px
          span 
             margin: 0 5px
    &__btn 
       width: 100%
       height: 60px
       background: transparent
-       
-      margin-top: 20px
+      margin-top: 6px
       border-radius: 30px
       font-size: 16px
       border: 1px solid #282828
@@ -1765,9 +1775,8 @@ textarea:-moz-placeholder
    &__sub 
       font-size: 20px
       font-weight: 300
-      line-height: 1.75
-      letter-spacing: normal
-      color: #000
+      line-height: 30px
+      color: rgb(40, 40, 40)
       margin-bottom: 50px
       width: 100% 
       max-width: 760px
@@ -1777,13 +1786,13 @@ textarea:-moz-placeholder
       color: #000
       margin-bottom: 40px
    &__text 
-      font-size: 16px
-      font-weight: 300;
-      line-height: 1.63
-      color: #000
+      font-size: 18px
+      font-weight: 300
+      line-height: 30px
+      color: rgb(40, 40, 40)
       margin-bottom: 25px
       width: 100% 
-      max-width: 814px
+      max-width: 839px
       &:last-child
          margin-bottom: 0
    &__box 
@@ -1898,7 +1907,7 @@ textarea:-moz-placeholder
       height: 31px
       color: rgb(40, 40, 40)
       border-radius: 10px
-      background-color: #caf059
+      background-color: #BAF048
       font-size: 14px
       margin-bottom: 16px
       span 
@@ -1908,7 +1917,7 @@ textarea:-moz-placeholder
       font-size: 18px
       font-weight: 300
       line-height: 1.56
-      color: #000
+      color: #282828
       width: 100%
       max-width: 275px
 .event 
@@ -1927,7 +1936,7 @@ textarea:-moz-placeholder
       object-fit: cover
       margin-bottom: 30px
    &__title 
-      font-size: 21px
+      font-size: 20px
       font-weight: 500
       margin-bottom: 25px
    &__list 
@@ -1991,11 +2000,12 @@ textarea:-moz-placeholder
 .faq 
    background: linear-gradient(180.00deg, rgb(249, 249, 249) 56.901%,rgb(255, 255, 255) 75.052%)
    padding-bottom: 115px
+   padding-top: 20px
    &__box
       width: 100%
       position: relative
       z-index: 2
-      max-width: 63%
+      max-width: 60.12%
       .accordeon__button 
          font-size: 24px
          font-weight: 300
@@ -2008,7 +2018,7 @@ textarea:-moz-placeholder
             height: 28px
             top: 3px
       .accordeon__item 
-         margin-bottom: 60px
+         margin-bottom: 53px
          &:last-child
             margin-bottom: 0
       .accordeon-faq
@@ -2024,6 +2034,7 @@ textarea:-moz-placeholder
          color: rgb(40, 40, 40)
          font-size: 16px
          line-height: 26px
+         margin-bottom: 0
          width: 100%
       .panel__text
          max-width: 800px
@@ -2048,7 +2059,8 @@ textarea:-moz-placeholder
    &__block 
       width: 100%
       height: auto
-      padding: 66px 30px 44px 32px
+      min-height: 470px
+      padding: 40px 30px 40px 32px
       border-radius: 20px
       background: rgb(255, 255, 255)
       margin-bottom: 33px
@@ -2059,11 +2071,11 @@ textarea:-moz-placeholder
    &__box 
       width: 100%
       max-width: 64%
-      .about__area
-         padding: 0
-         background: transparent
-         &:before 
-            display: none
+      // .about__area
+      //    padding: 0
+      //    background: transparent
+      //    &:before 
+      //       display: none
    &__pic 
       width: 100%
    &__name 
@@ -2089,7 +2101,7 @@ textarea:-moz-placeholder
       width: 100%
       border-radius: 20px
       background: rgb(255, 255, 255)
-      padding: 30px 35px
+      padding: 35px
       box-sizing: border-box
       .form-check-label
          display: flex
@@ -2119,8 +2131,9 @@ textarea:-moz-placeholder
          margin-bottom: 10px
       textarea
          padding: 22px 0 0 28px
-         font-size: 17px
+         font-size: 18px
          width: 100%
+         font-weight: 300
          border: 1px solid rgb(223, 223, 223)
          max-width: 100% 
          border-radius: 10px
@@ -2175,7 +2188,7 @@ textarea:-moz-placeholder
       overflow: hidden 
       position: relative
       border-radius: 20px
-      height: 311px
+      height: 320px
       padding: 40px 50px
       margin-bottom: 40px
       flex-direction: column
@@ -2210,7 +2223,7 @@ textarea:-moz-placeholder
       font-weight: 400
       text-transform: uppercase
 .about 
-   padding: 26px 0 131px
+   padding: 20px 0 131px
    background: rgb(249, 249, 249)
    .area__btn
       text-transform: uppercase
@@ -2359,7 +2372,7 @@ textarea:-moz-placeholder
    position: relative
    // background: #f9f9f9
    .stat__box
-      max-width: 65%
+      max-width: 66.6%
    h1 
       span 
          color: $green
@@ -2457,6 +2470,7 @@ textarea:-moz-placeholder
    &__sb 
       margin-top: 20px
       line-height: 26px
+      color: #000
    &__energy 
       margin-top: 60px
       h2 
@@ -2471,6 +2485,7 @@ textarea:-moz-placeholder
       img 
          width: 100%
          height: 380px
+         max-width: 818px
          border-radius: 20px
          object-fit: cover 
          margin-bottom: 55px
@@ -2484,7 +2499,7 @@ textarea:-moz-placeholder
       justify-content: space-between
       flex-wrap: wrap 
       div
-         width: 31.7%
+         width: 31.5%
          margin-bottom: 30px
          img 
             width: 100%
@@ -2508,6 +2523,7 @@ textarea:-moz-placeholder
       border-radius: 20px
       background: rgb(255, 255, 255)
       padding: 30px 35px 
+      max-width: 818px
       margin-bottom: 55px
       p 
          color: rgb(0, 0, 0)
@@ -2532,11 +2548,12 @@ textarea:-moz-placeholder
    &__area 
       width: 100%
       height: auto
-      padding: 40px
+      padding: 38px
       border-radius: 20px
       background: white
       margin-bottom: 190px
       margin-top: 232px
+      max-width: 807px
       p 
          color: rgb(0, 0, 0)
          font-size: 17px
@@ -2621,10 +2638,10 @@ textarea:-moz-placeholder
       h1 
          font-size: 90px
          font-weight: 200
-         line-height: 1.11
+         line-height: 0.93
          color: white
          span 
-            padding: 10px 5px 17px
+            padding: 8px 5px 18px
             background: $green
             line-height: 100%
             display: block
@@ -2702,10 +2719,34 @@ textarea:-moz-placeholder
        
       line-height: 1.59
       color: #3c3c3c
+   &_page 
+      nav
+         position: absolute
+         top: 0
+         left: 0
+         width: 100%
+         z-index: 33
+         background: transparent
+         border-bottom: none
+         .lang_select--selected
+            color: white
+         .selectCF
+            border: 1px solid white
+            background: rgba(255, 255, 255, 0.05)
+         .selectCF .titleCF
+            color: white !important
+         .selectCF .arrowCF
+            background: url(/img/bottom3.png) no-repeat !important
+         .menu-btn span
+            background: white
+         .nav__list .header--lang .lang_select.active:after
+            background: white
+      .header__wrap
+         padding-top: 364px
 .it 
    background-color: #f9f9f9
    .news-page__btn
-      margin-top: 30px
+      margin-top: 25px
    &__list
       flex-wrap: wrap
       margin: 20px 0
@@ -2736,12 +2777,12 @@ textarea:-moz-placeholder
    &__row 
       align-items: center
       margin-top: 60px
-      justify-content: space-between
+      justify-content: flex-start
       &_img 
          margin-right: 20px
    &__item 
       align-items: flex-start
-      margin-left: 44px
+      margin-left: 33px
       p 
          color: rgb(0, 0, 0)
          font-size: 14px
@@ -2750,16 +2791,16 @@ textarea:-moz-placeholder
          line-height: 24px
          margin: 0px 30px 0 0 
    &__wrap 
-      width: 105%
+      width: 99%
       margin-top: 40px
       justify-content: space-between
-      padding: 48px 60px 8px
+      padding: 35px 60px 4px
       flex-wrap: wrap
       border: 3px solid rgb(186, 240, 72)
       border-radius: 20px
       margin-bottom: 50px
    &__el 
-      width: 48%
+      width: 48.8%
       margin-bottom: 40px
       p 
          margin-top: 13px
@@ -2796,6 +2837,8 @@ textarea:-moz-placeholder
       margin-bottom: 30px
       ul
          padding-left: 25px
+         width: 100%
+         max-width: 638px
          li 
             display: flex
             align-items: flex-start
@@ -2808,7 +2851,7 @@ textarea:-moz-placeholder
                font-size: 16px
                font-weight: 300
                line-height: 26px
-               margin-bottom: 15px
+               margin-bottom: 25px
             &:last-child
                p 
                   margin-bottom: 0
@@ -2820,18 +2863,17 @@ textarea:-moz-placeholder
    padding-top: 100px
 .it2 
    &__sub 
-      font-size: 17px
-       
+      font-size: 16px
       line-height: 1.65
-      color: #3c3c3c
+      color: rgb(40, 40, 40)
       width: 100%
       max-width: 100%
-      padding: 30px 50px 35px 30px
+      padding: 35px 50px 37px 30px
       box-sizing: border-box
       border-radius: 10px
       background: rgb(255, 255, 255)
       p 
-         margin-bottom: 20px
+         margin-bottom: 26px
    &__standart
       width: 460px
       border-radius: 100px
@@ -2898,13 +2940,13 @@ textarea:-moz-placeholder
             margin-bottom: 0
    &__gra 
       width: 100%
-      margin-top: 30px
+      margin-top: 28.5px
 .area__box_it
    .it2__title
       margin-bottom: 30px
-      font-size: 30px
+      font-size: 40px
       font-weight: 600
-      line-height: 44px
+      line-height: 50px
       text-transform: uppercase
       font-family: 'Oswald'
       span 
@@ -2925,7 +2967,7 @@ textarea:-moz-placeholder
       text-transform: uppercase
       border-radius: 20px
       background: rgb(255, 255, 255)
-      padding: 24px 38px
+      padding: 22.5px 38px
       &:after 
          background: url(/img/acc.svg) no-repeat !important
          top: 43px
@@ -2961,7 +3003,7 @@ textarea:-moz-placeholder
       max-width: 822px
 .area__txt 
    color: rgb(0, 0, 0)
-   font-size: 17px
+   font-size: 16px
    font-weight: 300
    line-height: 26px
    margin-bottom: 25px
@@ -2983,7 +3025,7 @@ textarea:-moz-placeholder
       margin-bottom: 30px
       img 
          width: 100%
-         height: 263px
+         height: 311px
          object-fit: cover 
          overflow: hidden
          border-radius: 15px
@@ -3002,7 +3044,7 @@ textarea:-moz-placeholder
          font-size: 14px
          line-height: 23px
          margin-bottom: 10px
-         padding-right: 48px
+         padding-right: 26px
       a 
          display: flex
          color: rgb(40, 40, 40)
@@ -3025,6 +3067,7 @@ textarea:-moz-placeholder
    &:before 
       display: none
 .news-main
+   background: linear-gradient(180.00deg, rgb(249, 249, 249) 66.052%,rgb(255, 255, 255) 75.052%)
    .wave
       z-index: -1
 .news-page__btn
@@ -3043,7 +3086,7 @@ textarea:-moz-placeholder
       justify-content: space-between
       display: flex
    &__block 
-      padding: 27px
+      padding: 23px 27px
       border-radius: 20px
       background: rgb(255, 255, 255)
       width: 31.5%
@@ -3052,7 +3095,7 @@ textarea:-moz-placeholder
          font-size: 16px
          font-weight: 300
          line-height: 26px
-         margin-top: 16px
+         margin-top: 12px
 .per 
    background-color: #f9f9f9
    margin-top: -110px
@@ -3095,7 +3138,7 @@ textarea:-moz-placeholder
    &__row 
       border-radius: 10px
       background: rgb(255, 255, 255)
-      padding: 40px
+      padding: 40px 55px 40px 40px
    &__left 
       max-width: 525px 
       width: 100%
@@ -3190,4 +3233,38 @@ textarea:-moz-placeholder
             background: $green
             path 
                fill: white
-               
+#why 
+   background: white
+.header_page nav .menu .selectCF .titleCF
+   color: #282828 !important
+.header_page nav .menu .selectCF .arrowCF 
+   background: url(/img/bottom.png) no-repeat !important
+#it1 
+   .faq__box
+      max-width: 65.12%
+#news-page
+   .news-page__wrap
+      margin-top: 10px
+#mat, #events, #event, #faq
+   background: #F9F9F9
+#event, #stat2
+   padding-bottom: 100px
+#faq
+   .faq__box
+      max-width: 65.12%
+   .news-page__wrap
+      margin-top: 10px
+   .wave
+      width: inherit
+      height: auto
+#it4 
+   .faq__box
+      max-width: 65.12%
+   .it2__sub ul li p
+      margin-bottom: 10px
+   .it2__sub p
+      margin-bottom: 17px
+      font-size: 14px
+      line-height: 26px
+   .it2__sub_big p
+      font-size: 16px

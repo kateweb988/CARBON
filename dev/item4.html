@@ -29,15 +29,15 @@
 
 <body>
 	<div class="body-wrap page">
-		<header class="header header-it" id="header">
+		<header class="header header-it  header_page" id="header">
 			<nav class="nav">
 				<div class="container">
 					<div class="nav__box q">
 						<a href="main.html" class="nav__logo">
-							<img src="img/log.png" alt="">
+							<img src="img/logo.svg" alt="">
 						</a>
 						<div class="menu-btn2">
-							<img src="img/search.png" alt="" class="svg">
+							<img src="img/search3.png" alt="" class="svg">
 						</div>
 						<div class="menu2">
 							<h2>
@@ -57,7 +57,7 @@
 										<p>
 											Инструменты декорбанизации
 										</p>
-										<img src="img/bottom.png" alt="">
+										<img src="img/bottom3.png" alt="">
 									</div>
 									<div class="main_submenu--list">
 										<a href="#">
@@ -78,7 +78,7 @@
 										<p>
 											Информация для клиентов
 										</p>
-										<img src="img/bottom.png" alt="">
+										<img src="img/bottom3.png" alt="">
 									</div>
 									<div class="main_submenu--list">
 										<a href="#">
@@ -99,7 +99,7 @@
 										<p>
 											Портал для клиентов
 										</p>
-										<img src="img/bottom.png" alt="">
+										<img src="img/bottom3.png" alt="">
 									</div>
 									<div class="main_submenu--list">
 										<a href="#">
@@ -120,7 +120,7 @@
 										<p>
 											О компании
 										</p>
-										<img src="img/bottom.png" alt="">
+										<img src="img/bottom3.png" alt="">
 									</div>
 									<div class="main_submenu--list">
 										<a href="#">
@@ -202,7 +202,7 @@
 				</div>
 			</div>
 		</header>
-		<section class="area news-page it1 it" id="it">
+		<section class="area news-page it1 it" id="it4">
 			<div class="container">
 				<div class="area__box area__box_it q">
 					<div class="faq__box it__box">
@@ -265,7 +265,7 @@
 						<h2 class="it2__title">
 							<span>Углеродный калькулятор</span> Carbon Zero
 						</h2>
-						<div class="it2__sub">
+						<div class="it2__sub it2__sub_big">
 							<p>
 								Компания Карбон Зиро разработала ПО для автоматизации расчётов выбросов парниковых
 								газов на предприятии. Система гибко адаптируется под различные технологические процессы
@@ -586,10 +586,13 @@
 					<div id="map"></div>
 					<form action="success.php" class="call__form js-form" id="popupResult" method="post">
 						<div class="call__flex q">
-							<input type="text" name="name" placeholder="Имя">
-							<input type="text" name="surname" placeholder="Фамилия">
+							<input type="text" name="name" placeholder="Имя*">
+							<input type="text" name="surname" placeholder="Фамилия*">
 						</div>
-						<input type="text" name="name" placeholder="Название компании">
+						<div class="call__flex q">
+							<input type="tel" name="name" placeholder="Номер телефона*" class="tel">
+							<input type="text" name="name" placeholder="Название компании">
+						</div>
 						<input type="email" name="email" placeholder="Электронная почта">
 						<textarea name="text" placeholder="Чем мы можем Вам помочь?"></textarea>
 						<div class="call__row q">
@@ -607,7 +610,6 @@
 								Отправить
 							</button>
 						</div>
-
 					</form>
 				</div>
 			</div>

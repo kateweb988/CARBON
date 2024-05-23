@@ -55,7 +55,7 @@
 						</div>
 						<ul class="nav__list q">
 							<div class="header--lang">
-								<div class="lang_select main_submenu  active">
+								<div class="lang_select main_submenu">
 									<div class="lang_select--selected main_submenu--btn q">
 										<p>
 											Инструменты декорбанизации
@@ -622,10 +622,13 @@
 					<div id="map"></div>
 					<form action="success.php" class="call__form js-form" id="popupResult" method="post">
 						<div class="call__flex q">
-							<input type="text" name="name" placeholder="Имя">
-							<input type="text" name="surname" placeholder="Фамилия">
+							<input type="text" name="name" placeholder="Имя*">
+							<input type="text" name="surname" placeholder="Фамилия*">
 						</div>
-						<input type="text" name="name" placeholder="Название компании">
+						<div class="call__flex q">
+							<input type="tel" name="name" placeholder="Номер телефона*" class="tel">
+							<input type="text" name="name" placeholder="Название компании">
+						</div>
 						<input type="email" name="email" placeholder="Электронная почта">
 						<textarea name="text" placeholder="Чем мы можем Вам помочь?"></textarea>
 						<div class="call__row q">

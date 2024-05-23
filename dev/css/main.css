@@ -196,7 +196,7 @@ h1 {
 
 h2 {
   margin: 0;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -304,8 +304,8 @@ html *::-webkit-scrollbar-thumb {
   transition: 0.5s;
   width: 229px;
   height: 60px;
-  font-size: 13px;
-  color: #282828;
+  font-size: 14px;
+  color: black;
   border-radius: 29px;
   background-color: #ffdd00;
   border: 1px solid #ffdd00; }
@@ -474,7 +474,7 @@ textarea:-moz-placeholder {
   height: auto;
   transition: 0.5s all;
   background: white;
-  padding: 50px; }
+  padding: 54px 50px; }
   .popup__thank, .popup2__thank {
     display: block;
     margin: 10px auto; }
@@ -520,6 +520,9 @@ textarea:-moz-placeholder {
     font-weight: 400;
     line-height: 26px;
     text-transform: uppercase; }
+
+.popup2 {
+  padding: 50px; }
 
 .popup.active, .popup2.active {
   transform: translate(-50%, -46%) scale(1);
@@ -1200,8 +1203,8 @@ textarea:-moz-placeholder {
   padding: 5px 0 30px;
   border-bottom: 1px solid #f2f2f2;
   margin-bottom: 15px;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 0px;
+  padding-right: 0px;
   width: 100%; }
 
 .accordeon__item {
@@ -1280,7 +1283,7 @@ textarea:-moz-placeholder {
   .art__per {
     display: block;
     width: 326px;
-    height: 218px; }
+    height: 216px; }
     .art__per img {
       object-fit: cover;
       width: 100%;
@@ -1305,7 +1308,7 @@ textarea:-moz-placeholder {
     overflow: hidden;
     margin-top: 58px; }
     .art .swiper44 .swiper-slide {
-      border-radius: 5px;
+      border-radius: 10px;
       overflow: hidden;
       background-color: #ffffff;
       position: relative;
@@ -1318,11 +1321,11 @@ textarea:-moz-placeholder {
     opacity: 0; }
   .art__data {
     color: #83868c;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 27px;
     transform: rotate(270deg);
     position: absolute;
-    left: -31px;
+    left: -42px;
     top: 69px;
     white-space: nowrap; }
     .art__data img {
@@ -1336,10 +1339,9 @@ textarea:-moz-placeholder {
     font-weight: 700;
     font-size: 17px;
     line-height: 29px;
-    font-family: 'Formular';
-    margin: 19px 40px 30px 0;
+    margin: 16px 40px 27px 0;
     display: block;
-    color: #23262d; }
+    color: black; }
   .art__arrows {
     position: relative; }
   .art-arr {
@@ -1387,6 +1389,7 @@ textarea:-moz-placeholder {
     z-index: -1;
     bottom: 0;
     left: 0;
+    max-height: 580px;
     width: 105%; }
   .footer .call__socials {
     margin-top: 31px; }
@@ -1533,16 +1536,16 @@ textarea:-moz-placeholder {
   .info__item {
     border-radius: 20px;
     position: relative;
-    width: 31.3%;
+    width: 31.55%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 4px 95px 0 rgba(108, 108, 108, 0.19);
-    height: 239px;
+    height: 218px;
     transition: 0.5s;
     margin-bottom: 31px;
     background: white;
-    padding: 41px 24px 21px 38px; }
+    padding: 30px 24px 21px 30px; }
     .info__item:nth-child(2), .info__item:nth-child(6) {
       border: 1px solid  #1f1f1f;
       background: transparent;
@@ -1581,9 +1584,12 @@ textarea:-moz-placeholder {
       .info__item:nth-child(6) .info__icon {
         opacity: 0.05; }
   .info__name {
-    color: #232323;
-    font-size: 18px;
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
     transition: 0.5s;
+    position: relative;
+    z-index: 2;
     line-height: 24px; }
   .info__icon {
     position: absolute;
@@ -1615,7 +1621,7 @@ textarea:-moz-placeholder {
     margin: 82px auto 0;
     max-width: 99%; }
   .eff__item {
-    width: 30.7%;
+    width: 30.9%;
     position: relative;
     height: 456px;
     overflow: hidden;
@@ -1669,7 +1675,7 @@ textarea:-moz-placeholder {
     background: white;
     width: 100%;
     max-width: 534px;
-    padding: 50px 54px 67px 58px;
+    padding: 36px 54px 44px 58px;
     border-radius: 0px 100px 0 90px; }
   .eff__title {
     margin-bottom: 23px;
@@ -1677,6 +1683,7 @@ textarea:-moz-placeholder {
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
+    color: #000;
     line-height: 1.25; }
   .eff__content p {
     font-size: 16px;
@@ -1684,6 +1691,7 @@ textarea:-moz-placeholder {
     font-stretch: normal;
     font-style: normal;
     line-height: 1.69;
+    color: #000;
     margin-bottom: 25px; }
     .eff__content p:last-child {
       margin-bottom: 0; }
@@ -1692,9 +1700,12 @@ textarea:-moz-placeholder {
   padding: 82px 0px; }
   .news .art__link img {
     margin-left: 40px; }
+  .news .art__top {
+    padding-right: 31px; }
   .news__box {
     margin-top: 65px;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-right: 31px; }
   .news__content {
     width: 100%;
     justify-content: space-between;
@@ -1713,10 +1724,10 @@ textarea:-moz-placeholder {
     .news__main .news__time {
       color: #f6f8fb; }
     .news__main .news__name {
-      font-size: 17px;
+      font-size: 18px;
       font-weight: bold;
       color: white;
-      font-family: 'Montserrat';
+      line-height: 22px;
       margin-top: auto; }
     .news__main:hover .news__name {
       color: #BAF048; }
@@ -1731,17 +1742,17 @@ textarea:-moz-placeholder {
   .news__time {
     align-items: center;
     color: #83868c;
-    font-size: 13px;
+    font-size: 14px;
     position: relative;
     z-index: 1; }
     .news__time img {
       margin-right: 11px; }
   .news__item {
-    padding: 34px 25px 21px 24px;
+    padding: 23px 25px 20px 24px;
     background-color: #f6f6f6;
     display: block;
     width: 48.4%;
-    margin-bottom: 24px; }
+    margin-bottom: 28px; }
     .news__item:nth-child(n+3) {
       margin-bottom: 0; }
     .news__item .news__time {
@@ -1752,7 +1763,7 @@ textarea:-moz-placeholder {
       color: #BAF048; }
   .news__name {
     font-weight: 500;
-    color: #272733;
+    color: black;
     line-height: 1.71;
     position: relative;
     z-index: 1;
@@ -1815,16 +1826,16 @@ textarea:-moz-placeholder {
     align-items: flex-start;
     margin-bottom: 36px; }
   .call__name {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     color: #9d9d9d;
     margin-bottom: 5px; }
   .call__tel {
     color: #e5e5e5;
-    font-size: 15px; }
+    font-size: 16px; }
   .call__info {
     color: #e5e5e5;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.67; }
   .call__socials {
     margin-top: 40px; }
@@ -1851,7 +1862,7 @@ textarea:-moz-placeholder {
       border: none;
       border-bottom: 1px solid #d3d3d3;
       font-size: 18px;
-      padding-bottom: 14px;
+      padding-bottom: 18px;
       margin-bottom: 63px;
       background: transparent; }
     .call__form textarea {
@@ -1863,7 +1874,7 @@ textarea:-moz-placeholder {
       border: none;
       border-bottom: 1px solid #d3d3d3; }
     .call__form .custom-checkbox + label {
-      font-size: 13px; }
+      font-size: 14px; }
   .call__flex {
     justify-content: space-between; }
     .call__flex input {
@@ -1904,6 +1915,17 @@ textarea:-moz-placeholder {
     max-width: 860px;
     margin-left: 62px;
     justify-content: space-between; }
+    .nav__list .header--lang:first-child img {
+      display: none; }
+    .nav__list .header--lang .lang_select.active:after {
+      content: "";
+      display: block;
+      width: 245px;
+      height: 1px;
+      background: black;
+      position: absolute;
+      bottom: -34px;
+      left: 0; }
   .nav .lang_select--selected {
     color: black;
     font-size: 16px;
@@ -1960,21 +1982,12 @@ textarea:-moz-placeholder {
   text-transform: uppercase;
   color: #282828; }
 
-.page .nav {
-  border-bottom: 1px solid #efefef;
-  background: white; }
+.page h2 {
+  color: #282828;
+  font-size: 40px; }
 
-.page .lang_select {
-  position: relative; }
-  .page .lang_select.active:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -45px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #282828; }
+.page .nav {
+  padding: 20px 0; }
 
 .area {
   padding: 26px 0 131px;
@@ -1995,7 +2008,7 @@ textarea:-moz-placeholder {
     z-index: 2;
     flex: 1 0 auto;
     border: 1px solid #ededed;
-    padding: 36px 29px;
+    padding: 30px 29px;
     background: white; }
     .area__info h2 {
       font-size: 25px;
@@ -2030,10 +2043,10 @@ textarea:-moz-placeholder {
   .area__sub {
     font-size: 14px;
     font-weight: 300;
-    line-height: 1.71;
+    line-height: 24px;
     color: #8e8e8e;
     margin-top: 8px;
-    padding-bottom: 25px;
+    padding-bottom: 18px;
     margin-bottom: 28px;
     border-bottom: 1px solid #e9e9e9; }
   .area .call__block {
@@ -2067,11 +2080,12 @@ textarea:-moz-placeholder {
   .area__btn {
     width: 100%;
     font-size: 15px;
+    max-width: 330px;
     text-transform: uppercase;
-    margin: 37px auto 52px; }
+    margin: 17px auto 52px; }
   .area__content {
     width: 100%;
-    max-width: 64.5%; }
+    max-width: 65.15%; }
     .area__content #map {
       width: 100%;
       height: 771px;
@@ -2111,7 +2125,7 @@ textarea:-moz-placeholder {
   z-index: 2;
   flex: 1 0 auto;
   border: 1px solid #ededed;
-  padding: 36px 36px 50px;
+  padding: 30px 36px 33px;
   background: white;
   margin-top: 49px; }
   .news-page__wrap h2 {
@@ -2190,17 +2204,19 @@ textarea:-moz-placeholder {
       background: #BAF048; }
 
 .news-page__area {
-  padding-top: 16px;
-  margin-top: 20px;
+  padding-top: 19px;
+  margin-top: 16px;
   border-top: 1px solid #dfdfdf; }
 
 .news-page__item {
   align-items: flex-start;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #dfdfdf; }
   .news-page__item:hover .news-page__one {
     color: #BAF048; }
+  .news-page__item:nth-child(n+4) {
+    display: none; }
 
 .news-page__pic {
   margin-right: 18px;
@@ -2210,7 +2226,7 @@ textarea:-moz-placeholder {
   border-radius: 50%; }
 
 .news-page__one {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -2220,9 +2236,9 @@ textarea:-moz-placeholder {
 .news-page__row {
   align-items: center; }
   .news-page__row p {
-    font-size: 13px;
-    color: #3f3f3f;
-    margin-left: 12px; }
+    font-size: 14px;
+    color: #83868c;
+    margin-left: 10px; }
     .news-page__row p span {
       margin: 0 5px; }
 
@@ -2230,7 +2246,7 @@ textarea:-moz-placeholder {
   width: 100%;
   height: 60px;
   background: transparent;
-  margin-top: 20px;
+  margin-top: 6px;
   border-radius: 30px;
   font-size: 16px;
   border: 1px solid #282828; }
@@ -2246,9 +2262,8 @@ textarea:-moz-placeholder {
   .news-item__sub {
     font-size: 20px;
     font-weight: 300;
-    line-height: 1.75;
-    letter-spacing: normal;
-    color: #000;
+    line-height: 30px;
+    color: #282828;
     margin-bottom: 50px;
     width: 100%;
     max-width: 760px; }
@@ -2258,13 +2273,13 @@ textarea:-moz-placeholder {
     color: #000;
     margin-bottom: 40px; }
   .news-item__text {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
-    line-height: 1.63;
-    color: #000;
+    line-height: 30px;
+    color: #282828;
     margin-bottom: 25px;
     width: 100%;
-    max-width: 814px; }
+    max-width: 839px; }
     .news-item__text:last-child {
       margin-bottom: 0; }
   .news-item__box {
@@ -2385,7 +2400,7 @@ textarea:-moz-placeholder {
   height: 31px;
   color: #282828;
   border-radius: 10px;
-  background-color: #caf059;
+  background-color: #BAF048;
   font-size: 14px;
   margin-bottom: 16px; }
   .events__time span {
@@ -2396,7 +2411,7 @@ textarea:-moz-placeholder {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.56;
-  color: #000;
+  color: #282828;
   width: 100%;
   max-width: 275px; }
 
@@ -2417,7 +2432,7 @@ textarea:-moz-placeholder {
   margin-bottom: 30px; }
 
 .event__title {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 25px; }
 
@@ -2483,12 +2498,13 @@ textarea:-moz-placeholder {
 
 .faq {
   background: linear-gradient(180deg, #f9f9f9 56.901%, white 75.052%);
-  padding-bottom: 115px; }
+  padding-bottom: 115px;
+  padding-top: 20px; }
   .faq__box {
     width: 100%;
     position: relative;
     z-index: 2;
-    max-width: 63%; }
+    max-width: 60.12%; }
     .faq__box .accordeon__button {
       font-size: 24px;
       font-weight: 300;
@@ -2501,7 +2517,7 @@ textarea:-moz-placeholder {
         height: 28px;
         top: 3px; }
     .faq__box .accordeon__item {
-      margin-bottom: 60px; }
+      margin-bottom: 53px; }
       .faq__box .accordeon__item:last-child {
         margin-bottom: 0; }
     .faq__box .accordeon-faq {
@@ -2517,6 +2533,7 @@ textarea:-moz-placeholder {
       color: #282828;
       font-size: 16px;
       line-height: 26px;
+      margin-bottom: 0;
       width: 100%; }
     .faq__box .panel__text {
       max-width: 800px; }
@@ -2542,7 +2559,8 @@ textarea:-moz-placeholder {
   .stat__block {
     width: 100%;
     height: auto;
-    padding: 66px 30px 44px 32px;
+    min-height: 470px;
+    padding: 40px 30px 40px 32px;
     border-radius: 20px;
     background: white;
     margin-bottom: 33px; }
@@ -2553,11 +2571,6 @@ textarea:-moz-placeholder {
   .stat__box {
     width: 100%;
     max-width: 64%; }
-    .stat__box .about__area {
-      padding: 0;
-      background: transparent; }
-      .stat__box .about__area:before {
-        display: none; }
   .stat__pic {
     width: 100%; }
   .stat__name {
@@ -2585,7 +2598,7 @@ textarea:-moz-placeholder {
     width: 100%;
     border-radius: 20px;
     background: white;
-    padding: 30px 35px;
+    padding: 35px;
     box-sizing: border-box; }
     .form__main .form-check-label {
       display: flex;
@@ -2615,8 +2628,9 @@ textarea:-moz-placeholder {
       margin-bottom: 10px; }
     .form__main textarea {
       padding: 22px 0 0 28px;
-      font-size: 17px;
+      font-size: 18px;
       width: 100%;
+      font-weight: 300;
       border: 1px solid #dfdfdf;
       max-width: 100%;
       border-radius: 10px;
@@ -2671,7 +2685,7 @@ textarea:-moz-placeholder {
   overflow: hidden;
   position: relative;
   border-radius: 20px;
-  height: 311px;
+  height: 320px;
   padding: 40px 50px;
   margin-bottom: 40px;
   flex-direction: column; }
@@ -2711,7 +2725,7 @@ textarea:-moz-placeholder {
   text-transform: uppercase; }
 
 .about {
-  padding: 26px 0 131px;
+  padding: 20px 0 131px;
   background: #f9f9f9; }
   .about .area__btn {
     text-transform: uppercase; }
@@ -2859,7 +2873,7 @@ textarea:-moz-placeholder {
 .why {
   position: relative; }
   .why .stat__box {
-    max-width: 65%; }
+    max-width: 66.6%; }
   .why h1 span {
     color: #BAF048; }
   .why__bottom {
@@ -2952,7 +2966,8 @@ textarea:-moz-placeholder {
             color: #fbfbfb; }
   .why__sb {
     margin-top: 20px;
-    line-height: 26px; }
+    line-height: 26px;
+    color: #000; }
   .why__energy {
     margin-top: 60px; }
     .why__energy h2 {
@@ -2967,6 +2982,7 @@ textarea:-moz-placeholder {
     .why__energy img {
       width: 100%;
       height: 380px;
+      max-width: 818px;
       border-radius: 20px;
       object-fit: cover;
       margin-bottom: 55px;
@@ -2979,7 +2995,7 @@ textarea:-moz-placeholder {
     justify-content: space-between;
     flex-wrap: wrap; }
     .why__partner div {
-      width: 31.7%;
+      width: 31.5%;
       margin-bottom: 30px; }
       .why__partner div img {
         width: 100%;
@@ -3003,6 +3019,7 @@ textarea:-moz-placeholder {
     border-radius: 20px;
     background: white;
     padding: 30px 35px;
+    max-width: 818px;
     margin-bottom: 55px; }
     .why__per p {
       color: black;
@@ -3026,11 +3043,12 @@ textarea:-moz-placeholder {
   .why__area {
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 38px;
     border-radius: 20px;
     background: white;
     margin-bottom: 190px;
-    margin-top: 232px; }
+    margin-top: 232px;
+    max-width: 807px; }
     .why__area p {
       color: black;
       font-size: 17px;
@@ -3119,10 +3137,10 @@ textarea:-moz-placeholder {
   .header-it .header__wrap h1 {
     font-size: 90px;
     font-weight: 200;
-    line-height: 1.11;
+    line-height: 0.93;
     color: white; }
     .header-it .header__wrap h1 span {
-      padding: 10px 5px 17px;
+      padding: 8px 5px 18px;
       background: #BAF048;
       line-height: 100%;
       display: block;
@@ -3210,10 +3228,35 @@ textarea:-moz-placeholder {
   line-height: 1.59;
   color: #3c3c3c; }
 
+.header_page nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 33;
+  background: transparent;
+  border-bottom: none; }
+  .header_page nav .lang_select--selected {
+    color: white; }
+  .header_page nav .selectCF {
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.05); }
+  .header_page nav .selectCF .titleCF {
+    color: white !important; }
+  .header_page nav .selectCF .arrowCF {
+    background: url(../img/bottom3.png) no-repeat !important; }
+  .header_page nav .menu-btn span {
+    background: white; }
+  .header_page nav .nav__list .header--lang .lang_select.active:after {
+    background: white; }
+
+.header_page .header__wrap {
+  padding-top: 364px; }
+
 .it {
   background-color: #f9f9f9; }
   .it .news-page__btn {
-    margin-top: 30px; }
+    margin-top: 25px; }
   .it__list {
     flex-wrap: wrap;
     margin: 20px 0; }
@@ -3241,12 +3284,12 @@ textarea:-moz-placeholder {
   .it__row {
     align-items: center;
     margin-top: 60px;
-    justify-content: space-between; }
+    justify-content: flex-start; }
     .it__row_img {
       margin-right: 20px; }
   .it__item {
     align-items: flex-start;
-    margin-left: 44px; }
+    margin-left: 33px; }
     .it__item p {
       color: black;
       font-size: 14px;
@@ -3255,16 +3298,16 @@ textarea:-moz-placeholder {
       line-height: 24px;
       margin: 0px 30px 0 0; }
   .it__wrap {
-    width: 105%;
+    width: 99%;
     margin-top: 40px;
     justify-content: space-between;
-    padding: 48px 60px 8px;
+    padding: 35px 60px 4px;
     flex-wrap: wrap;
     border: 3px solid #baf048;
     border-radius: 20px;
     margin-bottom: 50px; }
   .it__el {
-    width: 48%;
+    width: 48.8%;
     margin-bottom: 40px; }
     .it__el p {
       margin-top: 13px;
@@ -3299,7 +3342,9 @@ textarea:-moz-placeholder {
   color: #282828;
   margin-bottom: 30px; }
   .it1 .it2__sub ul {
-    padding-left: 25px; }
+    padding-left: 25px;
+    width: 100%;
+    max-width: 638px; }
     .it1 .it2__sub ul li {
       display: flex;
       align-items: flex-start; }
@@ -3312,7 +3357,7 @@ textarea:-moz-placeholder {
         font-size: 16px;
         font-weight: 300;
         line-height: 26px;
-        margin-bottom: 15px; }
+        margin-bottom: 25px; }
       .it1 .it2__sub ul li:last-child p {
         margin-bottom: 0; }
 
@@ -3326,17 +3371,17 @@ textarea:-moz-placeholder {
   padding-top: 100px; }
 
 .it2__sub {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.65;
-  color: #3c3c3c;
+  color: #282828;
   width: 100%;
   max-width: 100%;
-  padding: 30px 50px 35px 30px;
+  padding: 35px 50px 37px 30px;
   box-sizing: border-box;
   border-radius: 10px;
   background: white; }
   .it2__sub p {
-    margin-bottom: 20px; }
+    margin-bottom: 26px; }
 
 .it2__standart {
   width: 460px;
@@ -3403,13 +3448,13 @@ textarea:-moz-placeholder {
 
 .it2__gra {
   width: 100%;
-  margin-top: 30px; }
+  margin-top: 28.5px; }
 
 .area__box_it .it2__title {
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 44px;
+  line-height: 50px;
   text-transform: uppercase;
   font-family: 'Oswald'; }
   .area__box_it .it2__title span {
@@ -3432,7 +3477,7 @@ textarea:-moz-placeholder {
   text-transform: uppercase;
   border-radius: 20px;
   background: white;
-  padding: 24px 38px; }
+  padding: 22.5px 38px; }
   .area__box_it .faq__box .accordeon__button:after {
     background: url(../img/acc.svg) no-repeat !important;
     top: 43px;
@@ -3473,7 +3518,7 @@ textarea:-moz-placeholder {
 
 .area__txt {
   color: black;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 26px;
   margin-bottom: 25px;
@@ -3497,7 +3542,7 @@ textarea:-moz-placeholder {
   margin-bottom: 30px; }
   .it3__item img {
     width: 100%;
-    height: 263px;
+    height: 311px;
     object-fit: cover;
     overflow: hidden;
     border-radius: 15px;
@@ -3516,7 +3561,7 @@ textarea:-moz-placeholder {
     font-size: 14px;
     line-height: 23px;
     margin-bottom: 10px;
-    padding-right: 48px; }
+    padding-right: 26px; }
   .it3__item a {
     display: flex;
     color: #282828;
@@ -3539,8 +3584,10 @@ textarea:-moz-placeholder {
   .about__box.about__area:before {
     display: none; }
 
-.news-main .wave {
-  z-index: -1; }
+.news-main {
+  background: linear-gradient(180deg, #f9f9f9 66.052%, white 75.052%); }
+  .news-main .wave {
+    z-index: -1; }
 
 .news-page__btn {
   background: #baf048;
@@ -3559,7 +3606,7 @@ textarea:-moz-placeholder {
   display: flex; }
 
 .it4__block {
-  padding: 27px;
+  padding: 23px 27px;
   border-radius: 20px;
   background: white;
   width: 31.5%; }
@@ -3568,7 +3615,7 @@ textarea:-moz-placeholder {
     font-size: 16px;
     font-weight: 300;
     line-height: 26px;
-    margin-top: 16px; }
+    margin-top: 12px; }
 
 .per {
   background-color: #f9f9f9;
@@ -3610,7 +3657,7 @@ textarea:-moz-placeholder {
   .per__row {
     border-radius: 10px;
     background: white;
-    padding: 40px; }
+    padding: 40px 55px 40px 40px; }
   .per__left {
     max-width: 525px;
     width: 100%;
@@ -3709,11 +3756,58 @@ textarea:-moz-placeholder {
         .error__socials a:hover path {
           fill: white; }
 
+#why {
+  background: white; }
+
+.header_page nav .menu .selectCF .titleCF {
+  color: #282828 !important; }
+
+.header_page nav .menu .selectCF .arrowCF {
+  background: url(../img/bottom.png) no-repeat !important; }
+
+#it1 .faq__box {
+  max-width: 65.12%; }
+
+#news-page .news-page__wrap {
+  margin-top: 10px; }
+
+#mat, #events, #event, #faq {
+  background: #F9F9F9; }
+
+#event, #stat2 {
+  padding-bottom: 100px; }
+
+#faq .faq__box {
+  max-width: 65.12%; }
+
+#faq .news-page__wrap {
+  margin-top: 10px; }
+
+#faq .wave {
+  width: inherit;
+  height: auto; }
+
+#it4 .faq__box {
+  max-width: 65.12%; }
+
+#it4 .it2__sub ul li p {
+  margin-bottom: 10px; }
+
+#it4 .it2__sub p {
+  margin-bottom: 17px;
+  font-size: 14px;
+  line-height: 26px; }
+
+#it4 .it2__sub_big p {
+  font-size: 16px; }
+
 @media screen and (max-width: 1799px) {
   .call__bg {
     bottom: -223px; }
   .footer__bg {
-    width: 110%; } }
+    width: 110%; }
+  #faq .wave {
+    left: -92px; } }
 
 @media screen and (max-width: 1699px) {
   .eff__wrap {
@@ -3729,7 +3823,9 @@ textarea:-moz-placeholder {
 
 @media screen and (max-width: 1599px) {
   .call__bg {
-    bottom: -137px; } }
+    bottom: -137px; }
+  #faq .wave {
+    left: -236px; } }
 
 @media screen and (max-width: 1499px) {
   .eff__block {
@@ -3744,7 +3840,9 @@ textarea:-moz-placeholder {
     bottom: -67px;
     width: 106%; }
   .footer__content:after {
-    left: 0; } }
+    left: 0; }
+  #faq .wave {
+    left: -320px; } }
 
 @media screen and (max-width: 1399px) {
   .call__bg {
@@ -3783,6 +3881,18 @@ textarea:-moz-placeholder {
     display: none; } }
 
 @media screen and (max-width: 1199px) {
+  .stat__block {
+    min-height: inherit; }
+  .it1 .it2__sub ul {
+    max-width: 100%; }
+  #it1 .faq__box {
+    max-width: 100%; }
+  #it4 .faq__box {
+    max-width: 100%; }
+  .news .art__top {
+    padding-right: 0px; }
+  .news__box {
+    padding-right: 0; }
   .why__energy h2 {
     line-height: normal; }
   .menu-btn {
@@ -4047,7 +4157,11 @@ textarea:-moz-placeholder {
   .per__left p {
     max-width: 100%; }
   .per {
-    margin-top: -50px; } }
+    margin-top: -50px; }
+  .footer__bg {
+    max-height: inherit; }
+  #faq .faq__box {
+    max-width: 100%; } }
 
 @media (max-width: 991px) {
   input, textarea, select {
@@ -4159,7 +4273,7 @@ textarea:-moz-placeholder {
     font-size: 16px;
     line-height: 23px; }
   .menu-btn {
-    top: 57px; } }
+    top: 42px; } }
 
 @media screen and (max-width: 767px) {
   .error__box img {
@@ -4304,8 +4418,10 @@ textarea:-moz-placeholder {
     bottom: -44px;
     left: 50%;
     margin-left: -90px; }
+  .news .art__link {
+    bottom: -30px; }
   .art__data {
-    left: -50px; }
+    left: -48px; }
   .news__box {
     margin-top: 30px; }
   .news, .call {
@@ -4783,4 +4899,18 @@ textarea:-moz-placeholder {
   .it__box {
     margin-bottom: 100px; }
   .baze__pic {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .news__item:nth-child(n+3) {
+    margin-bottom: 20px; }
+  #why .about__area {
+    padding-bottom: 80px; }
+  .news-item__sub {
+    line-height: 28px; }
+  #event {
+    padding-bottom: 80px; }
+  #it4 .it2__sub ul li p {
+    line-height: 24px; }
+  .header-it .header__wrap h1 {
+    font-size: 28px; }
+  .header-it .header__wrap {
+    padding-top: 200px; } }

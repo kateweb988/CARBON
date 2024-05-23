@@ -29,15 +29,15 @@
 
 <body>
 	<div class="body-wrap page">
-		<header class="header header-it" id="header">
+		<header class="header header-it header_page" id="header">
 			<nav class="nav">
 				<div class="container">
 					<div class="nav__box q">
 						<a href="main.html" class="nav__logo">
-							<img src="img/log.png" alt="">
+							<img src="img/logo.svg" alt="">
 						</a>
 						<div class="menu-btn2">
-							<img src="img/search.png" alt="" class="svg">
+							<img src="img/search3.png" alt="" class="svg">
 						</div>
 						<div class="menu2">
 							<h2>
@@ -57,7 +57,7 @@
 										<p>
 											Инструменты декорбанизации
 										</p>
-										<img src="img/bottom.png" alt="">
+										<img src="img/bottom3.png" alt="">
 									</div>
 									<div class="main_submenu--list">
 										<a href="#">
@@ -78,7 +78,7 @@
 										<p>
 											Информация для клиентов
 										</p>
-										<img src="img/bottom.png" alt="">
+										<img src="img/bottom3.png" alt="">
 									</div>
 									<div class="main_submenu--list">
 										<a href="#">
@@ -99,7 +99,7 @@
 										<p>
 											Портал для клиентов
 										</p>
-										<img src="img/bottom.png" alt="">
+										<img src="img/bottom3.png" alt="">
 									</div>
 									<div class="main_submenu--list">
 										<a href="#">
@@ -120,7 +120,7 @@
 										<p>
 											О компании
 										</p>
-										<img src="img/bottom.png" alt="">
+										<img src="img/bottom3.png" alt="">
 									</div>
 									<div class="main_submenu--list">
 										<a href="#">
@@ -431,10 +431,13 @@
 					<div id="map"></div>
 					<form action="success.php" class="call__form js-form" id="popupResult" method="post">
 						<div class="call__flex q">
-							<input type="text" name="name" placeholder="Имя">
-							<input type="text" name="surname" placeholder="Фамилия">
+							<input type="text" name="name" placeholder="Имя*">
+							<input type="text" name="surname" placeholder="Фамилия*">
 						</div>
-						<input type="text" name="name" placeholder="Название компании">
+						<div class="call__flex q">
+							<input type="tel" name="name" placeholder="Номер телефона*" class="tel">
+							<input type="text" name="name" placeholder="Название компании">
+						</div>
 						<input type="email" name="email" placeholder="Электронная почта">
 						<textarea name="text" placeholder="Чем мы можем Вам помочь?"></textarea>
 						<div class="call__row q">
@@ -452,7 +455,6 @@
 								Отправить
 							</button>
 						</div>
-
 					</form>
 				</div>
 			</div>
