@@ -1357,7 +1357,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see').addClass('opened');
     return false;
   });
 });
@@ -1365,7 +1365,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link2').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see2').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see2').addClass('opened');
     return false;
   });
 });
@@ -1373,7 +1373,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link3').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see3').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see3').addClass('opened');
     return false;
   });
 });
@@ -1381,7 +1381,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link4').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see4').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see4').addClass('opened');
     return false;
   });
 });
@@ -1389,7 +1389,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link5').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see5').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see5').addClass('opened');
     return false;
   });
 });
@@ -1397,7 +1397,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link6').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see6').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see6').addClass('opened');
     return false;
   });
 });
@@ -1405,7 +1405,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link7').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see7').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see7').addClass('opened');
     return false;
   });
 });
@@ -1413,7 +1413,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link8').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see8').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__content8').addClass('opened');
     return false;
   });
 });
@@ -1421,7 +1421,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link9').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see9').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see9').addClass('opened');
     return false;
   });
 });
@@ -1429,7 +1429,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link10').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see10').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see10').addClass('opened');
     return false;
   });
 });
@@ -1437,7 +1437,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link11').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see11').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see11').addClass('opened');
     return false;
   });
 });
@@ -1445,7 +1445,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $('.about__link12').click(function (event) {
     $(this).css('display', 'none');
     $('.about__see12').slideToggle();
-    $('.about__content').addClass('opened');
+    $('.about__see12').addClass('opened');
     return false;
   });
 });
